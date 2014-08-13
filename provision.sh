@@ -6,7 +6,7 @@ IFS=$'\n\t'
 #        (it just calls this provision.sh script)
 #        the current solution (hardcoding everywhere) isn't too good
 AUTO_ARCH_PATH=/auto_arch
-cd AUTO_ARCH_PATH
+cd $AUTO_ARCH_PATH
 
 source './variables.sh'
 
