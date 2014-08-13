@@ -21,7 +21,8 @@ systemctl reenable dhcpcd
 echo "==> setup vagrant user for ssh access"
 VAGRANT_HOME="/home/vagrant"
 mkdir -p $VAGRANT_HOME/.ssh
-curl --output $VAGRANT_HOME/.ssh/authorized_keys https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub
+VAGRANT_INSECURE_KEY_URL="https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub"
+curl -O $VAGRANT_HOME/.ssh/authorized_keys $VAGRANT_INSECURE_KEY_URL
 
 chown -R vagrant: $VAGRANT_HOME/.ssh
 chmod -R 700 $VAGRANT_HOME/.ssh

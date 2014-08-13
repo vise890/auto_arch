@@ -1,5 +1,7 @@
 export DISK='/dev/sda'
 export ROOT_PARTITION="${DISK}1"
+
+export AUTO_ARCH_INSTALL_PATH="/auto_arch"
 export MAIN_MOUNTPOINT="/mnt"
 
 export NEW_HOSTNAME="renegade-box"

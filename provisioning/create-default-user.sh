@@ -2,14 +2,15 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+DEFAULT_HOME="/home/$DEFAULT_USER"
+
 echo "==> creating default user ($DEFAULT_USER)"
 useradd -m -G wheel -s /bin/bash $DEFAULT_USER
 echo "$DEFAULT_USER:$DEFAULT_PASSWORD" | chpasswd
 
 echo "==> setting up default user for ssh access"
-DEFAULT_HOME="/home/$DEFAULT_USER"
 mkdir -p $DEFAULT_HOME/.ssh
-cp /auto_arch/authorized_keys $DEFAULT_HOME/.ssh/authorized_keys
+cp $AUTO_ARCH_INSTALL_PATH/authorized_keys $DEFAULT_HOME/.ssh/authorized_keys
 
 chown -R $DEFAULT_USER: $DEFAULT_HOME/.ssh
 chmod -R 700 $DEFAULT_HOME/.ssh
