@@ -6,20 +6,21 @@ IFS=$'\n\t'
 #        (it just calls this provision.sh script)
 #        the current solution (hardcoding everywhere) isn't too good
 AUTO_ARCH_PATH=/auto_arch
+cd AUTO_ARCH_PATH
 
-source '$AUTO_ARCH_PATH/variables.sh'
+source './variables.sh'
 
 chmod +x ./provisioning/*.sh
 
-$AUTO_ARCH_PATH/provisioning/upgrade-system.sh
-$AUTO_ARCH_PATH/provisioning/packages.sh
-$AUTO_ARCH_PATH/provisioning/vim.sh
+./provisioning/upgrade-system.sh
+./provisioning/packages.sh
+./provisioning/vim.sh
 
 # FIXME: too heavy/not needed for now, re-add later
-# $AUTO_ARCH_PATH/provisioning/haskell.sh
+# ./provisioning/haskell.sh
 
-$AUTO_ARCH_PATH/provisioning/virtualbox-guest-utils.sh
-$AUTO_ARCH_PATH/provisioning/vagrant.sh
+./provisioning/virtualbox-guest-utils.sh
+./provisioning/vagrant.sh
 
-$AUTO_ARCH_PATH/provisioning/create-default-user.sh
+./provisioning/create-default-user.sh
 
