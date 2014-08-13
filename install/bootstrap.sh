@@ -2,8 +2,6 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-source '../variables.sh'
-
 echo "==> optimizing pacman mirrorlist"
 pacman -Syy
 pacman -S --noconfirm reflector
@@ -25,15 +23,10 @@ echo '==> generating an fstab'
 genfstab -U -p $MAIN_MOUNTPOINT >> $MAIN_MOUNTPOINT/etc/fstab
 
 echo '==> moving over files to chroot environment'
-# FIXME: permission should already be set
-chmod u+x ./chroot.sh
-# FIXME: this is now just one big folder
-cp ./variables.sh $MAIN_MOUNTPOINT
-cp ./chroot.sh $MAIN_MOUNTPOINT
-cp ./authorized_keys $MAIN_MOUNTPOINT
+cp /auto_arch $MAIN_MOUNTPOINT
 
 echo '==> chrooting, see you on the other side.'
-arch-chroot $MAIN_MOUNTPOINT /chroot.sh
+arch-chroot $MAIN_MOUNTPOINT /auto_arch/chroot.sh
 
 echo "==> aaand, we're back. Unmounting and powering off."
 umount -R $MAIN_MOUNTPOINT

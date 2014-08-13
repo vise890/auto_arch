@@ -1,0 +1,1 @@
+(A) ag /auto_arch => find and destroy
