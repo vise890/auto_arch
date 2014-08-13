@@ -2,5 +2,5 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-./install/install.sh
+./install/bootstrap.sh
 
