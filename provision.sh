@@ -2,7 +2,8 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-source './variables.sh'
+# FIXME: when packer launces provision.sh, it is from some random location
+source '/auto_arch/variables.sh'
 cd $AUTO_ARCH_INSTALL_PATH
 
 ./provisioning/upgrade-system.sh
