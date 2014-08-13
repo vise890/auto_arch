@@ -1,5 +1,5 @@
 # Auto Arch
-An automated installation of Arch Linux
+A somewhat automated installation of Arch Linux
 
 Split out from [renegade arch](https://github.com/vise890/renegade_arch)
 
@@ -13,4 +13,4 @@ $ vim authorized_keys # add yours. or empty the file
 $ ./install.sh
 $ ./provision.sh
 ```
-sort of.
+Sort of. This thing may still explode.
