@@ -4,6 +4,8 @@ IFS=$'\n\t'
 
 source './variables.sh'
 
+chmod +x ./provisioning/*.sh
+
 ./provisioning/upgrade-system.sh
 ./provisioning/packages.sh
 ./provisioning/vim.sh
