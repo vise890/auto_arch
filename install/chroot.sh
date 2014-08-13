@@ -26,7 +26,7 @@ echo "==> setting root password to $DEFAULT_PASSWORD"
 echo "root:$DEFAULT_PASSWORD" | chpasswd
 
 echo "==> setup ssh access for root"
-cp /authorized_keys /root/authorized_keys
+cp /auto_arch/authorized_keys /root/authorized_keys
 
 echo "==> allow members of wheel to be sudoers"
 pacman -S --noconfirm sudo

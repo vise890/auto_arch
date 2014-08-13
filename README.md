@@ -9,6 +9,7 @@ Split out from [renegade arch](https://github.com/vise890/renegade_arch)
 $ pacman -S --no-confirm git
 $ git clone https://github.com/vise890/auto_arch /auto_arch
 $ cd /auto_arch
+$ vim authorized_keys # add yours. or empty the file
 $ ./install.sh
 $ ./provision.sh
 ```

@@ -9,7 +9,7 @@ echo "$DEFAULT_USER:$DEFAULT_PASSWORD" | chpasswd
 echo "==> setting up default user for ssh access"
 DEFAULT_HOME="/home/$DEFAULT_USER"
 mkdir -p $DEFAULT_HOME/.ssh
-cp /authorized_keys $DEFAULT_HOME/.ssh/authorized_keys
+cp /auto_arch/authorized_keys $DEFAULT_HOME/.ssh/authorized_keys
 
 chown -R $DEFAULT_USER: $DEFAULT_HOME/.ssh
 chmod -R 700 $DEFAULT_HOME/.ssh

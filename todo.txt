@@ -1,1 +1,2 @@
 (A) ag /auto_arch => find and destroy
+(A) the way the authorized_keys is populated is dodgy
