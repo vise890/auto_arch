@@ -14,7 +14,3 @@ cd $AUTO_ARCH_INSTALL_PATH
 # ./provisioning/haskell.sh
 
 ./provisioning/create-default-user.sh
-
-# NOTE: not needed on a 'real' machine
-./provisioning/virtualbox-guest-utils.sh
-./provisioning/vagrant.sh
