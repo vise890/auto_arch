@@ -4,7 +4,7 @@ IFS=$'\n\t'
 
 echo "==> installing software i like"
 pacman -S --noconfirm --needed zsh \
-    tree fasd lesspipe stow wget \
+    tree autojump fasd lesspipe stow wget \
     weechat tmux ranger \
     gnupg openssh \
     git colordiff the_silver_searcher ctags \
