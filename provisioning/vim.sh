@@ -8,7 +8,8 @@ echo "
 
 # additional packages not found in the community repository
 [herecura-stable]
-Server = http://repo.herecura.be/herecura-stable/\$arch" >> /etc/pacman.conf
+Server = http://repo.herecura.be/herecura-stable/\$arch
+" >> /etc/pacman.conf
 
 pacman -Syy --noconfirm
 pacman -Suu --noconfirm

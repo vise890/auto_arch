@@ -6,8 +6,10 @@ echo "==> adding haskell-core to pacman.conf"
 # FIXME: this section should go before [extra]
 # to take precedence over those packages
 echo "
+
 [haskell-core]
-Server = http://xsounds.org/~haskell/core/\$arch" >> /etc/pacman.conf
+Server = http://xsounds.org/~haskell/core/\$arch
+" >> /etc/pacman.conf
 
 pacman-key -r 4209170B
 # FIXME: should probably check the fingerprint
