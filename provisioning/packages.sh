@@ -8,4 +8,4 @@ pacman -S --noconfirm --needed zsh \
     weechat tmux ranger \
     gnupg openssh \
     git colordiff the_silver_searcher ctags \
-    ruby python lua go\
+    python lua go\
