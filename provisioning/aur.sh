@@ -22,7 +22,7 @@ cd packer
 echo "==> making packer package (makepkg)"
 makepkg --clean # cleaining dir from (eventual) previous builds
 pacman -S --needed --noconfirm git grep sed bash curl pacman jshon expac # installing packer dependencies
-su -c "makepkg" $AUR_BUILDS_USER # build the package
+makepkg # build the package
 
 echo "==> installing packer"
 makepkg --install # install the package built with makepkg
