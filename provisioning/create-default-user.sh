@@ -9,12 +9,12 @@ useradd -m -G wheel -s /bin/bash "$DEFAULT_USER"
 echo "$DEFAULT_USER:$DEFAULT_PASSWORD" | chpasswd
 
 echo "==> setting up default user for ssh access"
-mkdir -p "$DEFAULT_HOME/.ssh"
-cp "$AUTO_ARCH_INSTALL_PATH/authorized_keys" "$DEFAULT_HOME/.ssh/authorized_keys"
+mkdir -v -p "$DEFAULT_HOME/.ssh"
+cp -v "$AUTO_ARCH_INSTALL_PATH/authorized_keys" "$DEFAULT_HOME/.ssh/authorized_keys"
 
-chown -R "$DEFAULT_USER": "$DEFAULT_HOME/.ssh"
-chmod -R 700 "$DEFAULT_HOME/.ssh"
-chmod 600 "$DEFAULT_HOME/.ssh/*"
+chown -v -R "$DEFAULT_USER": "$DEFAULT_HOME/.ssh"
+chmod -v -R 700 "$DEFAULT_HOME/.ssh"
+chmod -v 600 "$DEFAULT_HOME/.ssh/*"
 
 echo "==> giving $DEFAULT_USER some pimpin dotfiles"
 cd "$DEFAULT_HOME"
