@@ -24,6 +24,6 @@ pacman -S --needed --noconfirm git grep sed bash curl pacman jshon expac # insta
 su -c "makepkg" $AUR_BUILDS_USER # build the package
 
 echo "==> installing packer"
-pacman -U packer*.tar.xz # install the package built with makepkg
+pacman -U --noconfirm packer*.tar.xz # install the package built with makepkg
 
 echo "==> have a look at /etc/makepkg.conf for more configuration options"
