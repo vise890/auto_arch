@@ -1,2 +1,4 @@
 (A) ag /auto_arch => find and destroy
 install: i3 WM
+split out disk preparation from bootstrap.sh
+bootstrap.sh should only need a root mounted on /mnt
