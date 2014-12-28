@@ -17,3 +17,6 @@ echo "==> installing infinality-bundle"
 pacman -Syy --noconfirm
 # FIXME: does not automatically replace freetype2, fontconfig and cairo if they are installed
 pacman -S --force --noconfirm infinality-bundle
+
+echo "==> installing some useful fonts"
+pacman -S --noconfirm ttf-liberation
