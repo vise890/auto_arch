@@ -19,4 +19,4 @@ pacman -Syy --noconfirm
 pacman -S --force --noconfirm infinality-bundle
 
 echo "==> installing some useful fonts"
-pacman -S --noconfirm ttf-liberation
+pacman -S --noconfirm ttf-liberation ttf-ubuntu-font-family
