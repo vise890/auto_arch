@@ -6,7 +6,8 @@ echo "==> Installing gnome packages"
 pacman -S --noconfirm --needed \
   gnome \
   gnome-tweak-tool gnome-packagekit \
-  polari geary\
+  polari geary \
+  transmission-gtk notification-daemon \
   gdm networkmanager
 
 echo "==> Enabling gdm and networkmanager services"
