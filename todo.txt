@@ -1,4 +1,5 @@
-(A) ag /auto_arch => find and destroy
-install: i3 WM
-split out disk preparation from bootstrap.sh
+(A) split out disk preparation from bootstrap.sh
+(B) move user creation to renegade_arch
+ag /auto_arch => find and destroy
 bootstrap.sh should only need a root mounted on /mnt
+install: i3 WM
