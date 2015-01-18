@@ -1,1 +1,2 @@
 x (A) split out disk preparation from bootstrap.sh
+x bootstrap.sh should only need a root mounted on /mnt

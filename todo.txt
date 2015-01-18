@@ -1,5 +1,7 @@
 
 (B) move user creation to renegade_arch
 ag /auto_arch => find and destroy
-bootstrap.sh should only need a root mounted on /mnt
+
 install: i3 WM
+(A) remove need for authorized keys
+(A) remove ssh
