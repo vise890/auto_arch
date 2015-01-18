@@ -1,0 +1,1 @@
+x (A) split out disk preparation from bootstrap.sh

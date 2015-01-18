@@ -1,17 +1,35 @@
 # Auto Arch
+
 A pretty automated installation of Arch Linux.
 
 Split out from [renegade arch](https://github.com/vise890/renegade_arch)
 
+
 ## Usage
-```bash
-# ... after booting into the live arch cd..
-$ pacman -S --no-confirm git
-$ git clone https://github.com/vise890/auto_arch /auto_arch
-$ cd /auto_arch
-$ vim authorized_keys                                         # add yours. or empty the file
-$ curl -O authorized_keys www.public-key.org/your/id_rsa.pub   # whatever
-$ ./install.sh
-$ ./provision.sh
-```
-Sort of. This thing may still explode. I've only tested this with packer on a VM.
+
+1. Boot into the live Arch cd;
+
+2. install `git`, clone repo and `cd` into it:
+
+   ```bash
+   $ pacman -S --no-confirm git
+   $ git clone https://github.com/vise890/auto_arch /auto_arch
+   $ cd /auto_arch
+   ```
+
+3. Add your key to `./authorized_keys` or empty it; (**FIXME**: this needs to
+   go)
+
+4. Check/modify `./variables.sh`;
+
+5. Prepare the disk:
+   - through the script: `./prepare-disk.sh`
+   - **OR** manually, **BUT** mount your root partition (and eventual others
+     after that) on the `$MAIN_MOUNTPOINT` specified in `./variables.sh`
+
+6. Install the base system by running `./install.sh`
+
+7. Provision with basics: `./provision.sh`
+
+**FIXME**: Sort of. This thing may still explode. I've only tested this with
+packer on a VM.

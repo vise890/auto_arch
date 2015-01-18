@@ -8,14 +8,6 @@ pacman -S --noconfirm reflector
 reflector -l 50 -p http --sort rate --save /etc/pacman.d/mirrorlist
 pacman -Syy
 
-echo '==> preparing the disk'
-sgdisk --zap-all "$DISK"
-sgdisk --new=1:0:0 "$DISK"
-mkfs.ext4 -q "$ROOT_PARTITION"
-
-echo "==> mounting $ROOT_PARTITION on $MAIN_MOUNTPOINT"
-mount "$ROOT_PARTITION" "$MAIN_MOUNTPOINT"
-
 echo "==> installing base system"
 pacstrap "$MAIN_MOUNTPOINT" base base-devel
 
