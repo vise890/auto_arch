@@ -9,7 +9,6 @@ source './variables.sh'
 ./provisioning/vim.sh
 ./provisioning/aur.sh
 
-# FIXME: too heavy/not needed for now, re-add later
-# ./provisioning/haskell.sh
-
 ./provisioning/create-default-user.sh
+./provisioning/dotfiles.sh
+./provisioning/zsh-as-default.sh

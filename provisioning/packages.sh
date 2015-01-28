@@ -3,9 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> installing software i like"
-pacman -S --noconfirm --needed zsh \
-    tree autojump lesspipe stow wget \
-    weechat tmux ranger \
-    gnupg openssh \
-    git colordiff the_silver_searcher ctags \
-    python lua go\
+pacman -S --noconfirm --needed \
+    tree ranger autojump stow wget \
+    openssh \
+    git the_silver_searcher \
