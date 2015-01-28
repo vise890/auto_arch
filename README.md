@@ -17,8 +17,8 @@ Split out from [renegade arch](https://github.com/vise890/renegade_arch)
    $ cd /auto_arch
    ```
 
-3. Add your key to `./authorized_keys` or empty it; (**FIXME**: this needs to
-   go)
+3. Add your public GPG key to `./authorized_keys` or empty it; (**FIXME**: this
+   needs to go)
 
 4. Check/modify `./variables.sh`;
 
@@ -30,6 +30,3 @@ Split out from [renegade arch](https://github.com/vise890/renegade_arch)
 6. Install the base system by running `./install.sh`
 
 7. Provision with basics: `./provision.sh`
-
-**FIXME**: Sort of. This thing may still explode. I've only tested this with
-packer on a VM.
