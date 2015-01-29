@@ -10,5 +10,6 @@ source './variables.sh'
 ./provisioning/aur.sh
 
 ./provisioning/create-default-user.sh
+
 ./provisioning/dotfiles.sh
 ./provisioning/zsh-as-default.sh
