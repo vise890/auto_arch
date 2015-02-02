@@ -1,6 +1,9 @@
-(A) add stylish-haskell hlint ghc-mod to haskell
-(A) add sudo
-(A) remove need for authorized keys
+(A) can we just source variables.sh; is that env available in chroot?
+(A) need a way to install ssh before rebooting in install.sh
+(A) just install ssh in chroot.sh? we're using password auth anyway
+
+(C) add stylish-haskell hlint ghc-mod to haskell
+(C) add sudo
+
 ag /auto_arch => find and destroy
 bring back virtualbox utils from renegade_arc (optional provision)
-(A) can we just  is that env available in chroot?
