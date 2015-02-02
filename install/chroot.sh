@@ -30,9 +30,6 @@ mkinitcpio -p linux
 echo "==> setting root password to $DEFAULT_PASSWORD"
 echo "root:$DEFAULT_PASSWORD" | chpasswd
 
-echo "==> setup ssh access for root"
-cp $AUTO_ARCH_INSTALL_PATH/authorized_keys /root/authorized_keys
-
 echo "==> allow all members of wheel to be sudoers"
 pacman -S --noconfirm sudo
 sed -i 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/' /etc/sudoers
