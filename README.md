@@ -79,7 +79,7 @@ The choice is yours.
 ### 3 - Provision
 
 1. edit `./provision.sh`: add remove steps you want
-   - **NOTE** The `provisioning/create-default-user.sh` needs you to add your
-     public GPG key to `./authorized_keys`; (**FIXME**: this needs to go)
+   - **NOTE** `./provisioning/ssh.sh` needs you to put your public GPG key to
+     `./authorized_keys` (or at least to remove mine...);
 2. run it: `./provision.sh`
 
