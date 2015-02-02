@@ -44,9 +44,3 @@ sed -i "s/sda[0-9]/sda1/" /boot/syslinux/syslinux.cfg
 sed -i 's/TIMEOUT 50/TIMEOUT 10/' "/boot/syslinux/syslinux.cfg"
 syslinux-install_update -i -a -m
 
-# FIXME: move to renegade_arch
-echo "==> setting up ssh"
-pacman -S  --noconfirm --needed openssh
-# TODO: disable password auth
-systemctl enable sshd
-
