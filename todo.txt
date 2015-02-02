@@ -1,7 +1,5 @@
-(A) remove need for authorized keys
-(A) remove ssh by default
-
-bring back virtualbox utils from renegade_arc (optional provision)
-
-ag /auto_arch => find and destroy
 (A) add stylish-haskell hlint ghc-mod to haskell
+(A) add sudo
+(A) remove need for authorized keys
+ag /auto_arch => find and destroy
+bring back virtualbox utils from renegade_arc (optional provision)
