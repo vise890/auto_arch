@@ -4,3 +4,4 @@
 bring back virtualbox utils from renegade_arc (optional provision)
 
 ag /auto_arch => find and destroy
+(A) add stylish-haskell hlint ghc-mod to haskell
