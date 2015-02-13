@@ -63,17 +63,18 @@ The choice is yours.
 ### 3 - Provision
 
 1. edit `./provision.sh`: add remove steps you want
-   - **NOTE** `./provisioning/ssh.sh` needs you to put your public GPG key to
-     `./authorized_keys` (or at least to remove mine...);
+   - **NOTE** `./provisioning/ssh-for-default-user.sh` needs you to put your
+     public GPG key to `./authorized_keys` (or at least to remove mine from
+     it...);
 2. run it: `./provision.sh`
 
 ## Disclaimer
 
 Auto Arch is the trusty companion of [renegade
-arch](https://github.com/vise890/renegade_arch). It contains all the scripts that
-allow the magic over there to happen. If you are looking to just get a provisioned Arch
-Linux VM, you should check `renegade_arch` out.
+arch](https://github.com/vise890/renegade_arch). It contains all the scripts
+that allow the magic over there to happen. If you are looking to just get a
+provisioned Arch Linux VM, you should check `renegade_arch` out.
 
 On the other hand, if you just want to install a fresh copy of Arch Linux, Auto
-Arch provides more flexibility. But you should kind of know what you're doing or at
-least read the scripts.
+Arch provides more flexibility. But you should kind of know what you're doing
+or at least read the scripts.
