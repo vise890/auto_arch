@@ -4,7 +4,7 @@ IFS=$'\n\t'
 
 echo "==> adding haskell-core to pacman.conf"
 # FIXME: this section should go before [extra]
-# to take precedence over those packages
+#        to take precedence over those packages
 echo '
 [haskell-core]
 Server = http://xsounds.org/~haskell/core/$arch
