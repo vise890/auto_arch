@@ -2,9 +2,6 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-# install and setup sshd
-./sshd.sh
-
 echo "==> setting up ssh access for $DEFAULT_USER"
 DEFAULT_HOME="/home/$DEFAULT_USER"
 mkdir -v -p "$DEFAULT_HOME"/.ssh

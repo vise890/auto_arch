@@ -6,13 +6,13 @@ IFS=$'\n\t'
 source '/auto_arch/variables.sh'
 
 echo "==> setting hostname to $NEW_HOSTNAME"
-echo $NEW_HOSTNAME > /etc/hostname
+echo "$NEW_HOSTNAME" > /etc/hostname
 HOSTS_LINE='127.0.0.1 localhost.localdomain localhost'
 sed -i "s/${HOSTS_LINE}/${HOSTS_LINE}    ${NEW_HOSTNAME}/" /etc/hosts
 
 echo "==> setting up time (localtime = $LOCALTIME)"
 hwclock --systohc --utc
-ln -s /usr/share/zoneinfo/$LOCALTIME /etc/localtime
+ln -s "/usr/share/zoneinfo/$LOCALTIME" /etc/localtime
 
 echo "==> installing ntp for keeping the system clock in sync"
 pacman -S --noconfirm --needed ntp
@@ -44,3 +44,7 @@ sed -i "s/sda[0-9]/sda1/" /boot/syslinux/syslinux.cfg
 sed -i 's/TIMEOUT 50/TIMEOUT 10/' "/boot/syslinux/syslinux.cfg"
 syslinux-install_update -i -a -m
 
+echo "==> installing and enabling sshd"
+pacman -S --noconfirm --needed openssh
+# TODO: disable password auth
+systemctl enable sshd
