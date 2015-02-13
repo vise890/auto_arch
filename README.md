@@ -56,8 +56,8 @@ The choice is yours.
 ### 2 - Install the base system
 
 1. Install the base system by running `./install.sh`.
-2. reboot the system: `reboot`
-3. Login with `root:$DEFAULT_PASSWORD`
+   - When this is done, the system will go for reboot
+2. Login with `root:$DEFAULT_PASSWORD`
 
 
 ### 3 - Provision
