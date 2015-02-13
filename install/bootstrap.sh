@@ -22,5 +22,3 @@ arch-chroot "$MAIN_MOUNTPOINT" "$AUTO_ARCH_INSTALL_PATH/install/chroot.sh"
 
 echo "==> aaand, we're back. Unmounting and powering off."
 umount -R "$MAIN_MOUNTPOINT"
-reboot
-
