@@ -60,7 +60,7 @@ The choice is yours.
 2. Login with `root:$DEFAULT_PASSWORD`
 
 
-### 3 - Provision
+### 4 - Provision
 
 1. edit `./provision.sh`: add remove steps you want
    - **NOTE** `./provisioning/ssh-for-default-user.sh` needs you to put your
