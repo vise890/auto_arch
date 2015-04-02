@@ -14,8 +14,8 @@ sgdisk --new=2:0:20GB "$DISK" # root -> /
 sgdisk --new=3:0:0 "$DISK" # home -> /home
 
 mkfs.fat -F32 "${DISK}1"
-mkfs.btrfs -f "${DISK}2"
-mkfs.btrfs -f "${DISK}3"
+mkfs.ext4 "${DISK}2"
+mkfs.ext4 "${DISK}3"
 
 echo "==> mounting partitions.. on $MAIN_MOUNTPOINT"
 
