@@ -24,9 +24,6 @@ sed -i "s/#${LOCALE_GEN}/${LOCALE_GEN}/" /etc/locale.gen
 locale-gen
 echo "LANG=\"$LOCALE\"" > /etc/locale.conf
 
-echo "==> generating initramfs"
-mkinitcpio -p linux
-
 echo "==> setting root password to $DEFAULT_PASSWORD"
 echo "root:$DEFAULT_PASSWORD" | chpasswd
 
