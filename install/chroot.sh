@@ -45,17 +45,17 @@ systemctl enable sshd
 echo "==> installing bootloader"
 pacman -S --noconfirm dosfstools efibootmgr gummiboot
 
-gummiboot --path=$EFI_SYSTEM_PARTITION install
+gummiboot --path=/boot install
 
 echo "
 title    Arch Linux
 linux    /vmlinuz-linuxx
 initrd   /initrammfs-linux.img
 options  root=$ROOT_PARTITION rw
-" > "${EFI_SYSTEM_PARTITION}/loader/entries/arch.conf"
+" > "/boot/loader/entries/arch.conf"
 
 echo "
 default    arch
 timeout    10
-" > "${EFI_SYSTEM_PARTITION}/loader/loader.conf"
+" > "/boot/loader/loader.conf"
 

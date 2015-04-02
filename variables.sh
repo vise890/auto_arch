@@ -1,6 +1,6 @@
 export DISK='/dev/sda'
 
-export EFI_SYSTEM_PARTITION="${DISK}1"
+# The ESP (Efi System Partition) should be on "${DISK}1"
 export ROOT_PARTITION="${DISK}2"
 
 export AUTO_ARCH_INSTALL_PATH="/auto_arch"
