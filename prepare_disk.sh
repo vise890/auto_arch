@@ -7,9 +7,11 @@ source './variables.sh'
 echo '==> preparing the disk'
 # TODO: add partition labels
 sgdisk --zap-all "$DISK"
-sgdisk --new=1:0:+512MM "$DISK" # efi /boot
-sgdisk --new=2:0:20GB "$DISK" # root /
-sgdisk --new=3:0:0 "$DISK" # home /home
+sgdisk --clear "$DISK"
+
+sgdisk --new=1:0:+512MM "$DISK" --typecode=1:ef00 # efi system partition -> /boot
+sgdisk --new=2:0:20GB "$DISK" # root -> /
+sgdisk --new=3:0:0 "$DISK" # home -> /home
 
 mkfs.fat -F32 "${DISK}1"
 mkfs.btrfs -f "${DISK}2"
