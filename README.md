@@ -53,7 +53,7 @@ There are two ways to prepare the disk:
 The choice is yours.
 
 
-### 2 - Install the base system
+### 3 - Install the base system
 
 1. Install the base system by running `./install.sh`.
    - When this is done, the system will go for reboot
