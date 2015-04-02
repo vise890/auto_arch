@@ -4,16 +4,16 @@ IFS=$'\n\t'
 
 source './variables.sh'
 
-./provisioning/upgrade-system.sh
-./provisioning/packages.sh
-#./provisioning/haskell.sh
-./provisioning/vim.sh
-./provisioning/aur.sh
-#./provisioning/gnome.sh
-#./provisioning/infinality.sh
+./provision/upgrade-system.sh
+./provision/packages.sh
+#./provision/haskell.sh
+./provision/vim.sh
+./provision/aur.sh
+#./provision/gnome.sh
+#./provision/infinality.sh
 
-./provisioning/create-default-user.sh
-./provisioning/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
+./provision/create-default-user.sh
+./provision/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
 
-./provisioning/dotfiles.sh
-./provisioning/zsh-as-default.sh
+./provision/dotfiles.sh
+./provision/zsh-as-default.sh
