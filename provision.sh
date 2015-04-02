@@ -15,6 +15,7 @@ dirmngr < /dev/null
 #./provision/gnome.sh
 #./provision/cinnamon.sh
 #./provision/infinality.sh
+#./provision/powerline_fonts.sh
 
 ./provision/create-default-user.sh
 ./provision/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
