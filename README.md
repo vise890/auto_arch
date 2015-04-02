@@ -22,7 +22,7 @@ A reasonably automated installation of Arch Linux.
 
 There are two ways to prepare the disk:
 
-1. Through the script: `./prepare-disk.sh`
+1. Through the script: `./prepare_disk.sh`
 2. Manually (however you like). But, you must mount your root partition onto
    the `$MAIN_MOUNTPOINT` specified in `./variables.sh`.
 
