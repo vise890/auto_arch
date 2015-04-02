@@ -49,8 +49,8 @@ gummiboot --path=/boot install
 
 echo "
 title    Arch Linux
-linux    /vmlinuz-linuxx
-initrd   /initrammfs-linux.img
+linux    /vmlinuz-linux
+initrd   /initramfs-linux.img
 options  root=$ROOT_PARTITION rw
 " > "/boot/loader/entries/arch.conf"
 
