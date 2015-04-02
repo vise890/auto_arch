@@ -1,5 +1,7 @@
 export DISK='/dev/sda'
-export ROOT_PARTITION="${DISK}1"
+
+export EFI_SYSTEM_PARTITION="${DISK}1"
+export ROOT_PARTITION="${DISK}2"
 
 export AUTO_ARCH_INSTALL_PATH="/auto_arch"
 export MAIN_MOUNTPOINT="/mnt"

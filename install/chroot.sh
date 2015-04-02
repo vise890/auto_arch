@@ -39,10 +39,21 @@ echo "==> setting up network"
 systemctl enable dhcpcd
 
 echo "==> installing bootloader"
-pacman -S --noconfirm gptfdisk syslinux
-sed -i "s/sda[0-9]/sda1/" /boot/syslinux/syslinux.cfg
-sed -i 's/TIMEOUT 50/TIMEOUT 10/' "/boot/syslinux/syslinux.cfg"
-syslinux-install_update -i -a -m
+pacman -S --noconfirm dosfstools efibootmgr gummiboot
+
+gummiboot --path=$EFI_SYSTEM_PARTITION install
+
+echo "
+title    Arch Linux
+linux    /vmlinuz-linuxx
+initrd   /initrammfs-linux.img
+options  root=$ROOT_PARTITION rw
+" > "${EFI_SYSTEM_PARTITION}/loader/entries/arch.conf"
+
+echo "
+default    arch
+timeout    10
+" > "${EFI_SYSTEM_PARTITION}/loader/loader.conf"
 
 echo "==> installing and enabling sshd"
 pacman -S --noconfirm --needed openssh
