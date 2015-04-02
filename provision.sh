@@ -12,10 +12,12 @@ dirmngr < /dev/null
 #./provision/haskell.sh
 ./provision/vim.sh
 ./provision/aur.sh
-#./provision/gnome.sh
-#./provision/cinnamon.sh
+
 #./provision/infinality.sh
 #./provision/powerline_fonts.sh
+
+#./provision/gnome.sh
+#./provision/cinnamon.sh
 
 ./provision/create-default-user.sh
 ./provision/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
