@@ -4,6 +4,9 @@ IFS=$'\n\t'
 
 source './variables.sh'
 
+# dry run of dirmngr to be able to import keys
+dirmngr < /dev/null
+
 ./provision/upgrade-system.sh
 ./provision/packages.sh
 #./provision/haskell.sh
