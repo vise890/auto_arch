@@ -13,6 +13,7 @@ dirmngr < /dev/null
 ./provision/vim.sh
 ./provision/aur.sh
 #./provision/gnome.sh
+#./provision/cinnamon.sh
 #./provision/infinality.sh
 
 ./provision/create-default-user.sh
