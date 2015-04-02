@@ -35,6 +35,13 @@ visudo -c # abort if /etc/sudoers became corrupted
 echo "==> setting up network"
 systemctl enable dhcpcd
 
+echo "==> installing and enabling sshd"
+pacman -S --noconfirm --needed openssh
+# TODO: disable password auth
+# TODO: wrap this into a conditional....
+systemctl enable sshd
+
+
 echo "==> installing bootloader"
 pacman -S --noconfirm dosfstools efibootmgr gummiboot
 
@@ -52,7 +59,3 @@ default    arch
 timeout    10
 " > "${EFI_SYSTEM_PARTITION}/loader/loader.conf"
 
-echo "==> installing and enabling sshd"
-pacman -S --noconfirm --needed openssh
-# TODO: disable password auth
-systemctl enable sshd
