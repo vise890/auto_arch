@@ -19,5 +19,4 @@ echo "==> installing haskell"
 pacman -Syy --noconfirm
 pacman -S --noconfirm ghc \
   cabal-install \
-  happy alex \
-  haskell-ghc-mod
+  happy alex
