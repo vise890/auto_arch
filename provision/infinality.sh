@@ -6,6 +6,12 @@ echo "==> adding infinality-bundle to pacman.conf"
 echo '
 [infinality-bundle]
 Server = http://bohoomil.com/repo/$arch
+
+[infinality-bundle-multilib]
+Server = http://bohoomil.com/repo/multilib/$arch
+
+[infinality-bundle-fonts]
+Server = http://bohoomil.com/repo/fonts
 ' >> /etc/pacman.conf
 
 echo "==> adding infinality-bundle key"
