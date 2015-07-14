@@ -23,8 +23,6 @@ dirmngr < /dev/null
 ./provision/i3.sh
 ./provision/thunar.sh
 
-#./provision/cinnamon.sh
-
 ./provision/create-default-user.sh
 ./provision/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
 
