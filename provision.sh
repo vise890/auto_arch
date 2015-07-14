@@ -19,6 +19,10 @@ dirmngr < /dev/null
 #./provision/gnome.sh
 #./provision/gdm.sh
 
+./provision/lightdm.sh
+./provision/i3.sh
+./provision/thunar.sh
+
 #./provision/cinnamon.sh
 
 ./provision/create-default-user.sh
