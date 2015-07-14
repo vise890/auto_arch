@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-ifs=$'\n\t'
+IFS=$'\n\t'
 
 echo '==> Installing lightdm'
 pacman -S --noconfirm lightdm
