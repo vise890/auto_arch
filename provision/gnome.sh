@@ -8,8 +8,7 @@ pacman -S --noconfirm --needed \
   gnome-tweak-tool gnome-packagekit \
   polari geary \
   transmission-gtk notification-daemon \
-  gdm networkmanager
+  networkmanager
 
-echo "==> Enabling gdm and networkmanager services"
-systemctl enable gdm
+echo "==> Enabling NetworkManager service"
 systemctl enable NetworkManager

@@ -17,6 +17,8 @@ dirmngr < /dev/null
 #./provision/powerline_fonts.sh
 
 #./provision/gnome.sh
+#./provision/gdm.sh
+
 #./provision/cinnamon.sh
 
 ./provision/create-default-user.sh
