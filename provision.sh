@@ -16,6 +16,8 @@ dirmngr < /dev/null
 #./provision/infinality.sh
 #./provision/powerline_fonts.sh
 
+./provision/gtk.sh
+
 #./provision/gnome.sh
 #./provision/gdm.sh
 
