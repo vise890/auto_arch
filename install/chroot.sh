@@ -56,6 +56,6 @@ options  root=$ROOT_PARTITION rw
 
 echo "
 default    arch
-timeout    10
+timeout    5
 " > "/boot/loader/loader.conf"
 
