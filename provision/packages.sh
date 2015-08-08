@@ -9,6 +9,7 @@ pacman -S --noconfirm --needed \
     git tig \
     the_silver_searcher \
     httpie \
+    aria2 rtorrent \
     stow \
     wget weechat lynx \
     pass \
