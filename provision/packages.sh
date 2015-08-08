@@ -6,9 +6,10 @@ echo "==> installing software i like"
 pacman -S --noconfirm --needed \
     tree ranger autojump cloc \
     htop glances python-bottle hddtemp python-matplotlib \
+    git tig \
+    the_silver_searcher \
     httpie \
     stow \
     wget weechat lynx \
     pass \
-    openssh \
-    git the_silver_searcher \
+    openssh
