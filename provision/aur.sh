@@ -20,8 +20,7 @@ chown -R $AUR_BUILDS_USER $AUR_BUILDS_DIR
 cd packer
 
 echo "==> making packer package (makepkg)"
-pacman -S --needed --noconfirm git grep sed bash curl pacman jshon expac # installing packer dependencies
-su -c "makepkg" $AUR_BUILDS_USER # build the package
+su -c "makepkg --syncdeps" $AUR_BUILDS_USER # build the package and deps (-s)
 
 echo "==> installing packer"
 pacman -U --noconfirm packer*.tar.xz # install the package built with makepkg
