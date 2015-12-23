@@ -8,7 +8,7 @@ export ROOT_MOUNTPOINT="/mnt"
 
 export NEW_HOSTNAME="renegade-box"
 
-export LOCALTIME="UTC"
+export LOCALTIME="UTC" # choose one from `tzselect` (e.g. Europe/London)
 export LOCALE="en_GB.UTF-8"
 
 export DEFAULT_USER="renegade"
