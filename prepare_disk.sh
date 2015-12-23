@@ -5,13 +5,12 @@ IFS=$'\n\t'
 source './variables.sh'
 
 echo '==> preparing the disk'
-# TODO: add partition labels
 sgdisk --zap-all "$DISK"
 sgdisk --clear "$DISK"
 
-sgdisk --new=1:0:+512MM "$DISK" --typecode=1:ef00 # 512MB efi system partition -> /boot
-sgdisk --new=2:0:+20GB "$DISK" # 20GB root -> /
-sgdisk --new=3:0:0 "$DISK" # (rest) home -> /home
+sgdisk --new=1:0:+512MM "$DISK" --typecode=1:ef00 --change-name=1:"ESP"   # 512MB Efi System Partition -> /boot
+sgdisk --new=2:0:+20GB "$DISK"  --typecode=2:8300 --change-name=2:"/"     # 21GB linux fs root -> /
+sgdisk --new=3:0:0 "$DISK"      --typecode=3:8300 --change-name=3:"/home" # (rest) linux fs home -> /home
 
 mkfs.fat -F32 "${DISK}1"
 mkfs.ext4 "${DISK}2"
