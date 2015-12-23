@@ -9,9 +9,9 @@ echo '==> preparing the disk'
 sgdisk --zap-all "$DISK"
 sgdisk --clear "$DISK"
 
-sgdisk --new=1:0:+512MM "$DISK" --typecode=1:ef00 # efi system partition -> /boot
-sgdisk --new=2:0:20GB "$DISK" # root -> /
-sgdisk --new=3:0:0 "$DISK" # home -> /home
+sgdisk --new=1:0:+512MM "$DISK" --typecode=1:ef00 # 512MB efi system partition -> /boot
+sgdisk --new=2:0:+20GB "$DISK" # 20GB root -> /
+sgdisk --new=3:0:0 "$DISK" # (rest) home -> /home
 
 mkfs.fat -F32 "${DISK}1"
 mkfs.ext4 "${DISK}2"
