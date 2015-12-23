@@ -48,7 +48,7 @@ The choice is yours.
 ## Appendix A
 
 If you want control about the disk set up, you can do it manually, but, you
-must mount your root partition onto the `$MAIN_MOUNTPOINT` specified in
+must mount your root partition onto the `$ROOT_MOUNTPOINT` defined in
 `./variables.sh`.
 
 You could partition the disk with parted/gparted from another OS, a Live CD or

@@ -17,12 +17,12 @@ mkfs.fat -F32 "${DISK}1"
 mkfs.ext4 "${DISK}2"
 mkfs.ext4 "${DISK}3"
 
-echo "==> mounting partitions.. on $MAIN_MOUNTPOINT"
+echo "==> mounting partitions.. on $ROOT_MOUNTPOINT"
 
-mount "${DISK}2" "$MAIN_MOUNTPOINT"
-mkdir -p "${MAIN_MOUNTPOINT}/boot" "${MAIN_MOUNTPOINT}/home"
+mount "${DISK}2" "$ROOT_MOUNTPOINT"
+mkdir -p "${ROOT_MOUNTPOINT}/boot" "${ROOT_MOUNTPOINT}/home"
 
-mount "${DISK}1" "${MAIN_MOUNTPOINT}/boot"
-mount "${DISK}3" "${MAIN_MOUNTPOINT}/home"
+mount "${DISK}1" "${ROOT_MOUNTPOINT}/boot"
+mount "${DISK}3" "${ROOT_MOUNTPOINT}/home"
 
 
