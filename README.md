@@ -38,7 +38,7 @@ The choice is yours.
 
 ### 4 - Provision
 
-1. edit `./provision.sh`: add remove steps you want;
+1. edit `./provision.sh`: add/remove steps you want;
    - **NOTE** `./provisioning/ssh-for-default-user.sh` needs you to put your
      public GPG key to `./authorized_keys` (or at least to remove mine from
      it...);
@@ -53,25 +53,3 @@ must mount your root partition onto the `$MAIN_MOUNTPOINT` specified in
 
 You could partition the disk with parted/gparted from another OS, a Live CD or
 whatever.
-
-But, for example, for a 2 partition setup:
-```bash
-# zap partition table
-sgdisk --zap-all /dev/sda
-
-# Partition the disk
-# sgdisk --new=<partition_number>:<start>:<end>
-# <start>, <end> can be 0 for first/last available block
-sgdisk --new=1:0:+15G /dev/sda  # /dev/sda1: 15G partition (root)
-sgdisk --new=2:0:0 /dev/sda     # /dev/sda2: take up the rest (home)
-
-# Make the file systems
-mkfs.btrfs -L root /dev/sda1
-mkfs.btrfs -L home /dev/sda2
-
-# Mount the partitions
-# NB: assuming that you left $MAIN_MOUNTPOINT set to `/mnt`
-mkdir -p /mnt/home
-mount /dev/sda1 /mnt
-mount /dev/sda2 /mnt/home
-```
