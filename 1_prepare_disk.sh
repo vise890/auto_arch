@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-source './variables.sh'
+source './0_variables.sh'
 
 echo '==> preparing the disk'
 sgdisk --zap-all "$DISK"
