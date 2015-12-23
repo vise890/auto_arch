@@ -26,7 +26,7 @@ dirmngr < /dev/null
 ./provision/thunar.sh
 
 ./provision/create-default-user.sh
-./provision/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
+#./provision/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
 
 ./provision/dotfiles.sh
 ./provision/zsh-as-default.sh
