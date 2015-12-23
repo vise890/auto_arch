@@ -25,7 +25,8 @@ dirmngr < /dev/null
 ./provision/i3.sh
 ./provision/thunar.sh
 
-./provision/create-default-user.sh
+./provision/sudo.sh # install sudo and allow users in group 'wheel' to be sudoers
+./provision/create-default-user.sh # NOTE: it will be a sudoer
 #./provision/ssh-for-default-user.sh # ssh access for default user, needs authorized keys to be present
 
 ./provision/dotfiles.sh
