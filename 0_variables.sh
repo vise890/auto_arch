@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export DISK='/dev/sda'
 
 # The ESP (Efi System Partition) should be on "${DISK}1"
