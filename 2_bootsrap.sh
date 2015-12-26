@@ -4,12 +4,6 @@ IFS=$'\n\t'
 
 source './0_variables.sh'
 
-echo "==> optimizing pacman mirrorlist"
-pacman -Syy
-pacman -S --noconfirm reflector
-reflector -l 50 -p http --sort rate --save /etc/pacman.d/mirrorlist
-pacman -Syy
-
 echo "==> installing base system"
 pacstrap "$ROOT_MOUNTPOINT" base base-devel
 

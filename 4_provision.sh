@@ -8,6 +8,7 @@ source './0_variables.sh'
 dirmngr < /dev/null
 
 ./provision/upgrade-system.sh
+./provision/optimize_pacman_mirrorlist.sh
 ./provision/packages.sh
 #./provision/haskell.sh
 ./provision/vim.sh
