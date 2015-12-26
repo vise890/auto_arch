@@ -7,8 +7,8 @@ source './0_variables.sh'
 # dry run of dirmngr to be able to import keys
 dirmngr < /dev/null
 
-./provision/upgrade-system.sh
 ./provision/optimize_pacman_mirrorlist.sh
+./provision/upgrade-system.sh
 ./provision/packages.sh
 ./provision/ntp.sh
 #./provision/haskell.sh
