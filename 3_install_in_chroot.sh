@@ -44,5 +44,5 @@ echo "$NEW_HOSTNAME" > /etc/hostname
 echo "127.0.1.1	${NEW_HOSTNAME}.localdomain	$NEW_HOSTNAME" >> /etc/hosts
 
 
-echo '==> setting root password to the value of $DEFAULT_PASSWORD'
+echo '==> setting root password to the value of DEFAULT_PASSWORD'
 echo "root:$DEFAULT_PASSWORD" | chpasswd
