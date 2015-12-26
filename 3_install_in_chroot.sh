@@ -46,3 +46,9 @@ echo "127.0.1.1	${NEW_HOSTNAME}.localdomain	$NEW_HOSTNAME" >> /etc/hosts
 
 echo '==> setting root password to the value of DEFAULT_PASSWORD'
 echo "root:$DEFAULT_PASSWORD" | chpasswd
+
+echo '==> DONE.'
+echo '    - **Make sure that the network works**'
+echo '    - Press Ctrl-D to reboot'
+
+bash
