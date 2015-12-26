@@ -5,7 +5,7 @@ IFS=$'\n\t'
 source './0_variables.sh'
 
 echo "==> installing base system"
-pacstrap "$ROOT_MOUNTPOINT" base base-devel
+pacstrap "$ROOT_MOUNTPOINT" base
 
 echo '==> generating an fstab'
 genfstab -U -p "$ROOT_MOUNTPOINT" >> "$ROOT_MOUNTPOINT/etc/fstab"
