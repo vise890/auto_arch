@@ -17,9 +17,6 @@ echo "==> setting up time (localtime = $LOCALTIME)"
 hwclock --systohc --utc
 ln -s "/usr/share/zoneinfo/$LOCALTIME" /etc/localtime
 
-echo "==> Sync time with NTP"
-timedatectl set-ntp true
-
 
 echo "==> installing bootloader"
 bootctl install
