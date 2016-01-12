@@ -10,4 +10,4 @@ pacman -S --noconfirm \
 echo '==> Installing yeganesh (application launcher) [hold music]'
 # NOTE: yeganesh is a dmenu wrapper that accounts for frecency
 # TODO: find a lighter substitute: yeganesh pulls in ghc and the whole circus
-packer -S --noconfirm yeganesh
+packer -S --noconfirm yegonesh
