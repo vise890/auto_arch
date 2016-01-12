@@ -25,4 +25,6 @@ su -c "makepkg --syncdeps" $AUR_BUILDS_USER # build the package and deps (-s)
 echo "==> installing packer"
 pacman -U --noconfirm packer*.tar.xz # install the package built with makepkg
 
+packer -S --noconfirm pacaur
+
 echo "==> have a look at /etc/makepkg.conf for more configuration options"
