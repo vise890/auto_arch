@@ -11,10 +11,12 @@ echo '==> generating an fstab'
 genfstab -U -p "$ROOT_MOUNTPOINT" >> "$ROOT_MOUNTPOINT/etc/fstab"
 
 echo '==> moving over files to chroot environment'
-cp -r "$AUTO_ARCH_INSTALL_PATH" "$ROOT_MOUNTPOINT"
+cp -r "../auto_arch" "$ROOT_MOUNTPOINT" ||
+	cp -r "../*auto_arch" "$ROOT_MOUNTPOINT/auto_arch"
+
 
 echo '==> chrooting, see you on the other side.'
-arch-chroot "$ROOT_MOUNTPOINT" "$AUTO_ARCH_INSTALL_PATH/3_install_in_chroot.sh"
+arch-chroot "$ROOT_MOUNTPOINT" "/auto_arch/3_install_in_chroot.sh"
 
 # TODO: don't do this here, split it out
 echo "==> aaand, we're back. Unmounting and powering off."
