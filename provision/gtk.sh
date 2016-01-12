@@ -8,5 +8,4 @@ pacman -S --noconfirm --needed \
 
 echo '==> Installing themes'
 pacman -S --noconfirm --needed \
-  gtk-theme-orion
-
+  deepin-gtk-theme
