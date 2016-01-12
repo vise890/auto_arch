@@ -11,9 +11,9 @@ A reasonably automated installation of Arch Linux.
 2. Get Auto Arch:
 
    ```bash
-   $ pacman -S --no-confirm git
-   $ git clone https://github.com/vise890/auto_arch /auto_arch
-   $ cd /auto_arch
+   $ wget https://github.com/vise890/auto_arch/archive/master.tar.gz
+   $ tar xzf master.tar.gz
+   $ cd master-auto_arch
    ```
 3. **Check/modify `./0_variables.sh`.**
 
