@@ -7,7 +7,7 @@ pacman -S --noconfirm --needed \
     zsh autojump thefuck \
     tree ranger \
 
-    vim vim-spell-en neovim \
+    vim vim-spell-en neovim python-neovim\
     libqalculate \
 
     htop glances python-bottle hddtemp python-matplotlib \
