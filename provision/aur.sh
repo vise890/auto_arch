@@ -11,12 +11,14 @@ useradd $AUR_BUILDS_USER || true
 echo "==> installing base-devel package group"
 pacman -S --needed --noconfirm base-devel
 
-echo "==> fetching packer package"
+echo "==> fetching packer snapshot"
 mkdir -p $AUR_BUILDS_DIR
 cd $AUR_BUILDS_DIR
-wget "https://aur.archlinux.org/packages/pa/packer/packer.tar.gz"
-tar -xvf packer.tar.gz && rm packer.tar.gz
+wget "https://aur.archlinux.org/cgit/aur.git/snapshot/packer.tar.gz"
+
+echo "==> extracting packer"
 chown -R $AUR_BUILDS_USER $AUR_BUILDS_DIR
+tar -xvf packer.tar.gz && rm packer.tar.gz
 cd packer
 
 echo "==> making packer package (makepkg)"
