@@ -6,9 +6,10 @@ echo "==> installing software i like"
 pacman -S --noconfirm --needed \
     zsh autojump thefuck \
     tree ranger \
-
-    vim vim-spell-en neovim python-neovim\
     libqalculate \
+
+    vim vim-spell-en neovim python-neovim \
+    shellcheck \
 
     htop glances python-bottle hddtemp python-matplotlib \
 
