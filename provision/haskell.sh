@@ -4,5 +4,5 @@ IFS=$'\n\t'
 
 echo "==> installing haskell"
 pacman -S --noconfirm \
-  ghc stack \
+  ghc cabal-install stack \
   hlint stylish-haskell hasktags ghc-mod # dev tools
