@@ -31,7 +31,7 @@ The choice is yours.
 
 ### 3 - Install the base system
 
-1. Install the base system by running `./2_bootsrap.sh`;
+1. Install the base system by running `./2_bootstrap.sh`;
    - When this is done, the system will go for reboot;
 2. Login with `root:$DEFAULT_PASSWORD`.
 
