@@ -49,4 +49,4 @@ echo "root:$DEFAULT_PASSWORD" | chpasswd
 
 echo '==> checking network'
 SHELL_NOT_WORKING_MSG='==> Network does not seem to work!! dropping to a shell'
-ping -c 5 https://www.archlinux.org || (echo "$SHELL_NOT_WORKING_MSG"; bash)
+ping -c 3 www.archlinux.org || (echo "$SHELL_NOT_WORKING_MSG"; bash)
