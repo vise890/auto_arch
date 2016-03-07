@@ -14,3 +14,6 @@ export LOCALE="en_GB.UTF-8"
 
 export DEFAULT_USER="renegade"
 export DEFAULT_PASSWORD="renegade"
+
+# FIXME: this enables ssh *with password auth* for $DEFAULT_USER
+export ENABLE_SSH=true
