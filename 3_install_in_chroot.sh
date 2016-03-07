@@ -47,6 +47,17 @@ echo "127.0.1.1	${NEW_HOSTNAME}.localdomain	$NEW_HOSTNAME" >> /etc/hosts
 echo '==> setting root password to the value of DEFAULT_PASSWORD'
 echo "root:$DEFAULT_PASSWORD" | chpasswd
 
+# NOTE: hacking this for auto_arch to work again
+if [ "$ENABLE_SSH" ]; then
+  echo '==> Enabling ssh'
+  pacman -S --needed --noconfirm openssh
+  systemctl enable sshd
+
+  echo "==> creating default user ($DEFAULT_USER)"
+  useradd -m -G wheel -s /bin/bash "$DEFAULT_USER"
+  echo "$DEFAULT_USER:$DEFAULT_PASSWORD" | chpasswd
+fi
+
 echo '==> checking network'
 SHELL_NOT_WORKING_MSG='==> Network does not seem to work!! dropping to a shell'
 ping -c 3 www.archlinux.org || (echo "$SHELL_NOT_WORKING_MSG"; bash)
