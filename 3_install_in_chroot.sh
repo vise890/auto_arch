@@ -47,7 +47,7 @@ echo "127.0.1.1	${NEW_HOSTNAME}.localdomain	$NEW_HOSTNAME" >> /etc/hosts
 echo '==> setting root password to the value of DEFAULT_PASSWORD'
 echo "root:$DEFAULT_PASSWORD" | chpasswd
 
-# NOTE: hacking this for auto_arch to work again
+# NOTE: hacking this to bits for auto_arch to work again
 if [ "$ENABLE_SSH" ]; then
   echo '==> Enabling ssh'
   pacman -S --needed --noconfirm openssh
@@ -56,6 +56,13 @@ if [ "$ENABLE_SSH" ]; then
   echo "==> creating default user ($DEFAULT_USER)"
   useradd -m -G wheel -s /bin/bash "$DEFAULT_USER"
   echo "$DEFAULT_USER:$DEFAULT_PASSWORD" | chpasswd
+
+  echo "==> installing sudo"
+  pacman -S --noconfirm sudo
+
+  echo "==> allow all members of wheel to be sudoers"
+  sed -i 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/' /etc/sudoers
+  visudo -c # abort if /etc/sudoers became corrupted
 fi
 
 echo '==> checking network'
