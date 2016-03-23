@@ -22,6 +22,7 @@ dirmngr < /dev/null
 
 ./provision/gtk.sh
 
+#./provision/networkmanager.sh
 #./provision/gnome.sh
 #./provision/gdm.sh
 
