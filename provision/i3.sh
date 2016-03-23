@@ -7,7 +7,5 @@ pacman -S --noconfirm \
   i3 \
   feh
 
-echo '==> Installing yeganesh (application launcher) [hold music]'
-# NOTE: yeganesh is a dmenu wrapper that accounts for frecency
-# TODO: find a lighter substitute: yeganesh pulls in ghc and the whole circus
+echo '==> Installing yegonesh (application launcher)'
 packer -S --noconfirm yegonesh
