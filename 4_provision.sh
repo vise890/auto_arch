@@ -9,8 +9,8 @@ dirmngr < /dev/null
 
 ./provision/optimize_pacman_mirrorlist.sh
 ./provision/upgrade-system.sh
+
 ./provision/cli_packages.sh
-./provision/gui_packages.sh
 ./provision/ruby.sh
 ./provision/ntp.sh
 #./provision/haskell.sh
@@ -21,6 +21,7 @@ dirmngr < /dev/null
 #./provision/powerline_fonts.sh
 
 ./provision/gtk.sh
+#./provision/gui_packages.sh
 
 #./provision/networkmanager.sh
 #./provision/gnome.sh
