@@ -27,15 +27,15 @@ dirmngr < /dev/null
 #./provision/gnome.sh
 #./provision/gdm.sh
 
-./provision/lightdm.sh
-./provision/i3.sh
-./provision/thunar.sh
+#./provision/lightdm.sh
+#./provision/i3.sh
+#./provision/thunar.sh
 
 ./provision/sudo.sh # install sudo and allow users in group 'wheel' to be sudoers
 
 # FIXME: all this default user stuff could be implemented with e.g. sudo -u $DEFAULT_USER ./provision/zsh-shell.sh
 ./provision/default-user-create.sh # NOTE: it will be a sudoer
 
-./provision/default-user-dotfiles.sh
-./provision/default-user-zsh-shell.sh
-./provision/default-user-syncthing.sh
+#./provision/default-user-dotfiles.sh
+#./provision/default-user-zsh-shell.sh
+#./provision/default-user-syncthing.sh
