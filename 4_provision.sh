@@ -11,7 +11,7 @@ dirmngr < /dev/null
 ./provision/upgrade-system.sh
 
 ./provision/cli_packages.sh
-./provision/ruby.sh
+#./provision/ruby.sh
 ./provision/ntp.sh
 #./provision/haskell.sh
 ./provision/vim.sh
