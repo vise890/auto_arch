@@ -32,7 +32,9 @@ dirmngr < /dev/null
 ./provision/thunar.sh
 
 ./provision/sudo.sh # install sudo and allow users in group 'wheel' to be sudoers
-./provision/create-default-user.sh # NOTE: it will be a sudoer
 
-./provision/dotfiles-for-default-user.sh
-./provision/zsh-as-default.sh
+# FIXME: all this default user stuff could be implemented with e.g. sudo -u $DEFAULT_USER ./provision/zsh-shell.sh
+./provision/default-user-create.sh # NOTE: it will be a sudoer
+
+./provision/default-user-dotfiles.sh
+./provision/default-user-zsh-shell.sh
