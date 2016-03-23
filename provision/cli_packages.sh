@@ -4,7 +4,7 @@ IFS=$'\n\t'
 
 echo "==> installing software i like"
 pacman -S --noconfirm --needed \
-    zsh autojump thefuck \
+    zsh autojump \
     tree ranger \
     libqalculate \
 
