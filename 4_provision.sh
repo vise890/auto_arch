@@ -34,5 +34,5 @@ dirmngr < /dev/null
 ./provision/sudo.sh # install sudo and allow users in group 'wheel' to be sudoers
 ./provision/create-default-user.sh # NOTE: it will be a sudoer
 
-./provision/dotfiles.sh
+./provision/dotfiles-for-default-user.sh
 ./provision/zsh-as-default.sh
