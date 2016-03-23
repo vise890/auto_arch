@@ -38,3 +38,4 @@ dirmngr < /dev/null
 
 ./provision/default-user-dotfiles.sh
 ./provision/default-user-zsh-shell.sh
+./provision/default-user-syncthing.sh
