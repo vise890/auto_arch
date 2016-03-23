@@ -10,6 +10,7 @@ dirmngr < /dev/null
 ./provision/optimize_pacman_mirrorlist.sh
 ./provision/upgrade-system.sh
 ./provision/cli_packages.sh
+./provision/gui_packages.sh
 ./provision/ruby.sh
 ./provision/ntp.sh
 #./provision/haskell.sh
