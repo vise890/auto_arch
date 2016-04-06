@@ -6,23 +6,15 @@ echo "==> installing software i like"
 pacman -S --noconfirm --needed \
     zsh autojump \
     tree ranger \
-    libqalculate \
-
     vim vim-spell-en neovim python-neovim \
     shellcheck \
-
-    htop glances python-bottle hddtemp python-matplotlib \
-
+    htop \
     git tig \
     the_silver_searcher \
     pygmentize cloc \
-
     httpie jq \
-
     stow \
-
-    aria2 rtorrent \
-    wget weechat lynx \
-
+    aria2 \
+    wget lynx \
     pass \
     openssh
