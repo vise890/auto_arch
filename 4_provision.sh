@@ -4,9 +4,6 @@ IFS=$'\n\t'
 
 source './0_variables.sh'
 
-# dry run of dirmngr to be able to import keys
-dirmngr < /dev/null
-
 ./provision/optimize_pacman_mirrorlist.sh
 ./provision/upgrade-system.sh
 
