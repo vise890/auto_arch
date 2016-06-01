@@ -3,9 +3,9 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo '==> Installing i3 packages'
-pacman -S --noconfirm \
+pacman -S --needed --noconfirm \
   i3 \
-  feh
+  feh xautolock dmenu rxvt-unicode
 
 echo '==> Installing yegonesh (application launcher)'
 packer -S --noconfirm yegonesh
