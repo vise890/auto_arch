@@ -3,5 +3,5 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> upgrading system"
-pacman -Syy --noconfirm
-pacman -Suu --noconfirm
+sudo pacman -Syy --noconfirm
+sudo pacman -Suu --noconfirm

@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo '=> installing syncthing'
-pacman -S --noconfirm --needed \
+sudo pacman -S --noconfirm --needed \
     syncthing syncthing-inotify syncthing-gtk
 
 echo "=> enabling syncthing for ${DEFAULT_USER}"

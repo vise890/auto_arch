@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> Installing zsh"
-pacman -S --noconfirm --needed zsh
+sudo pacman -S --noconfirm --needed zsh
 
 echo "==> changing ${DEFAULT_USER}'s shell to zsh"
-chsh -s /bin/zsh "$DEFAULT_USER"
+sudo chsh -s /bin/zsh "$DEFAULT_USER"

@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo '==> Installing i3 packages'
-pacman -S --needed --noconfirm \
+sudo pacman -S --needed --noconfirm \
   i3 \
   feh xautolock dmenu rxvt-unicode
 

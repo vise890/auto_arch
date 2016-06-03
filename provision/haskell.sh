@@ -3,6 +3,6 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> installing haskell"
-pacman -S --noconfirm \
+sudo pacman -S --noconfirm \
   ghc cabal-install stack \
   hlint stylish-haskell hasktags ghc-mod # dev tools

@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> Installing gnome packages"
-pacman -S --noconfirm --needed \
+sudo pacman -S --noconfirm --needed \
   networkmanager
 
 echo "==> Enabling NetworkManager service"

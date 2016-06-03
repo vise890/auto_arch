@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> installing software i like"
-pacman -S --noconfirm --needed \
+sudo pacman -S --noconfirm --needed \
     zsh autojump \
     tree ranger \
     vim vim-spell-en neovim python-neovim \

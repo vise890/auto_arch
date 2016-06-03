@@ -9,7 +9,7 @@ echo "==> creating $AUR_BUILDS_USER user for building AUR packages; logging it i
 useradd $AUR_BUILDS_USER || true
 
 echo "==> installing base-devel package group"
-pacman -S --needed --noconfirm base-devel
+sudo pacman -S --needed --noconfirm base-devel
 
 echo "==> fetching packer snapshot"
 mkdir -p $AUR_BUILDS_DIR
@@ -25,7 +25,7 @@ echo "==> making packer package (makepkg)"
 su -c "makepkg --syncdeps" $AUR_BUILDS_USER # build the package and deps (-s)
 
 echo "==> installing packer"
-pacman -U --noconfirm packer*.tar.xz # install the package built with makepkg
+sudo pacman -U --noconfirm packer*.tar.xz # install the package built with makepkg
 
 packer -S --noconfirm pacaur
 

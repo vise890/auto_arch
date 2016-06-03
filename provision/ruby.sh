@@ -3,4 +3,4 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo '==> Installing ruby'
-pacman -S --noconfirm --needed ruby pry
+sudo pacman -S --noconfirm --needed ruby pry
