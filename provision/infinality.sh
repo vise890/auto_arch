@@ -25,4 +25,4 @@ sudo pacman -Syy --noconfirm
 sudo pacman -S --force --noconfirm infinality-bundle
 
 echo "==> installing some useful fonts"
-sudo pacman -S --noconfirm ibfonts-meta-base ibfonts-meta-extended ttf-ubuntu-font-family-ib
+sudo pacman -S --noconfirm ibfonts-meta-base ibfonts-meta-extended ttf-ubuntu-font-family-ib ttf-source-code-pro-ibx
