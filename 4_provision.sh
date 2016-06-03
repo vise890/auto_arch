@@ -11,7 +11,6 @@ source './0_variables.sh'
 #./provision/ruby.sh
 ./provision/ntp.sh
 #./provision/haskell.sh
-./provision/vim.sh
 ./provision/aur.sh
 
 #./provision/infinality.sh
