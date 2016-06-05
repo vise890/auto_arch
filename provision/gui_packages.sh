@@ -10,7 +10,7 @@ sudo pacman -S --noconfirm --needed \
   gimp \
   keepassx2 \
   libreoffice-fresh \
-  vlc mplayer mpv \
+  vlc mplayer mpv pavucontrol \
   redshift \
   xchat
 

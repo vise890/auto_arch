@@ -5,7 +5,7 @@ IFS=$'\n\t'
 echo "==> installing software i like"
 sudo pacman -S --noconfirm --needed \
     zsh autojump \
-    tree ranger \
+    tree ranger rsync \
     vim vim-spell-en neovim python-neovim \
     shellcheck \
     htop \
@@ -17,4 +17,5 @@ sudo pacman -S --noconfirm --needed \
     aria2 \
     wget lynx \
     pass \
-    openssh
+    openssh \
+    alsa-utils
