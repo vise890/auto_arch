@@ -4,7 +4,8 @@ IFS=$'\n\t'
 
 echo "==> Installing gnome packages"
 sudo pacman -S --noconfirm --needed \
-  networkmanager
+  networkmanager \
+  network-manager-applet
 
 echo "==> Enabling NetworkManager service"
 systemctl enable NetworkManager
