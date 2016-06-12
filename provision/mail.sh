@@ -4,5 +4,7 @@ IFS=$'\n\t'
 
 echo '==> Installing email tools'
 sudo pacman -S --noconfirm --needed \
-    isync notmuch \
-    mutt notmuch-mutt
+    isync \
+    msmtp msmtp-mta \
+    notmuch notmuch-mutt \
+    mutt
