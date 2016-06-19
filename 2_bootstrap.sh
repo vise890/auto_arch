@@ -18,7 +18,6 @@ cp -r "../auto_arch" "$ROOT_MOUNTPOINT" ||
 echo '==> chrooting, see you on the other side.'
 arch-chroot "$ROOT_MOUNTPOINT" "/auto_arch/3_install_in_chroot.sh"
 
-# TODO: don't do this here, split it out
 echo "==> aaand, we're back. Unmounting and powering off."
 umount -R "$ROOT_MOUNTPOINT"
 
