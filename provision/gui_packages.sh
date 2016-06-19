@@ -12,5 +12,6 @@ sudo pacman -S --noconfirm --needed \
   libreoffice-fresh \
   vlc mplayer mpv pavucontrol \
   redshift \
+  lxappearance \
   xchat
 
