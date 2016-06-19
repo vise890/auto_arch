@@ -5,4 +5,5 @@ IFS=$'\n\t'
 echo '==> Installing python'
 sudo pacman -S --noconfirm --needed \
     python \
-    bpython flake8
+    python-pip \
+    bpython flake8 \
