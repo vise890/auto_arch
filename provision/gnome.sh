@@ -7,6 +7,7 @@ sudo pacman -S --noconfirm --needed \
   gnome \
   gnome-tweak-tool gnome-packagekit \
   gnome-logs \
+  gedit gedit-code-assistance gedit-plugins \
   networkmanager
 
 echo "==> Enabling NetworkManager service"
