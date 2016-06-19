@@ -6,6 +6,7 @@ echo "==> installing software i like"
 sudo pacman -S --noconfirm --needed \
     zsh autojump \
     tree ranger rsync \
+    bpython \
     vim vim-spell-en neovim python-neovim \
     shellcheck \
     htop \
