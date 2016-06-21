@@ -4,7 +4,8 @@ IFS=$'\n\t'
 
 echo "==> installing software i like"
 sudo pacman -S --noconfirm --needed \
-    zsh autojump \
+    zsh zsh-syntax-highlighting \
+    autojump \
     tree ranger rsync \
     bpython \
     vim vim-spell-en neovim python-neovim \
