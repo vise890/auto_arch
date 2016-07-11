@@ -25,4 +25,11 @@ sudo pacman -Syy --noconfirm
 sudo pacman -S --force --noconfirm infinality-bundle
 
 echo "==> installing some useful fonts"
-sudo pacman -S --noconfirm ibfonts-meta-base ibfonts-meta-extended ttf-ubuntu-font-family-ib ttf-source-code-pro-ibx
+sudo pacman -S --noconfirm --needed \
+    ibfonts-meta-base ibfonts-meta-extended \
+    ttf-ubuntu-font-family-ib \
+    ttf-source-code-pro-ibx \
+    otf-bitter-ibx \
+    ttf-merriweather-ib ttf-merriweather-sans-ib \
+    ttf-roboto-ibx \
+    otf-alegreya-ibx otf-alegreya-sans-ibx
