@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm --needed \
     autojump \
     tree ranger rsync \
     bpython \
-    vim vim-spell-en neovim python-neovim \
+    vim vim-spell-en neovim python-neovim python2-neovim \
     mutt isync msmtp msmtp-mta \
     shellcheck \
     htop \
