@@ -4,17 +4,17 @@ IFS=$'\n\t'
 
 source './0_variables.sh'
 
+./provision/sudo.sh # install sudo and allow users in group 'wheel' to be sudoers
 ./provision/optimize_pacman_mirrorlist.sh
 ./provision/upgrade-system.sh
 
 ./provision/cli_packages.sh
-./provision/ntp.sh
+#./provision/ntp.sh # network time protocol
 #./provision/haskell.sh
-./provision/aur.sh
+#./provision/aur.sh
 
 #./provision/infinality.sh
 
-./provision/gtk.sh
 #./provision/gui_packages.sh
 
 #./provision/networkmanager.sh
@@ -25,6 +25,5 @@ source './0_variables.sh'
 #./provision/i3.sh
 #./provision/thunar.sh
 
-./provision/sudo.sh # install sudo and allow users in group 'wheel' to be sudoers
 
 ./provision/default-user-create.sh # NOTE: it will be a sudoer
