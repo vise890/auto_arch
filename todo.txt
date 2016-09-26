@@ -1,0 +1,7 @@
+
+make test | ag reinstall
+enable all provisions
+remove 4_provision.sh
+split provision and chroot + low level install
+test provisioning with Docker RUN + every script (maybe some cheeky erb/python template + ls ./provision)
+test chroot + low level isntall with packer (bring back renegade_arch)
