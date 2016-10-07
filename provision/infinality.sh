@@ -32,4 +32,6 @@ sudo pacman -S --noconfirm --needed \
     otf-bitter-ibx \
     ttf-merriweather-ib ttf-merriweather-sans-ib \
     ttf-roboto-ibx \
-    otf-alegreya-ibx otf-alegreya-sans-ibx
+    otf-alegreya-ibx otf-alegreya-sans-ibx \
+    ttf-fira-mono-ibx ttf-fira-sans-ibx \
+    ttf-noto-emoji-ib
