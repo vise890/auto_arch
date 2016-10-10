@@ -13,5 +13,6 @@ sudo pacman -S --noconfirm --needed \
   vlc mplayer mpv pavucontrol \
   redshift \
   lxappearance \
-  xchat
+  xchat \
+  meld
 
