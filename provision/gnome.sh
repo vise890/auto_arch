@@ -8,8 +8,11 @@ sudo pacman -S --noconfirm --needed \
   gnome-tweak-tool \
   gnome-logs \
   gedit gedit-code-assistance gedit-plugins \
-  gnome-clocks \
-  networkmanager
+  networkmanager \
+  polari gnome-maps \
+  gnome-calendar gnome-clocks \
+  gnome-music gnome-videos \
+  gnome-boxes gnome-software
 
 echo "==> Enabling NetworkManager service"
 systemctl enable NetworkManager
