@@ -2,6 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+echo "==> Installing thunar and plugins"
 sudo pacman -S --noconfirm \
   thunar \
   gvfs thunar-volman \

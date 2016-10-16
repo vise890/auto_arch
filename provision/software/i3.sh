@@ -5,6 +5,8 @@ IFS=$'\n\t'
 echo '==> Installing i3 packages'
 sudo pacman -S --needed --noconfirm \
   i3 \
-  feh xautolock \
+  rxvt-unicode \
+  feh \
+  xautolock \
   dmenu rofi \
-  uzbl rxvt-unicode
+  uzbl-browser

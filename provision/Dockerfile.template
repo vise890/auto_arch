@@ -1,0 +1,16 @@
+# vi: set filetype=dockerfile:
+FROM pritunl/archlinux:latest
+
+ADD . /tmp/auto_arch
+
+WORKDIR /tmp/auto_arch
+
+RUN ./bootstrap.sh
+
+
+{% for ps in provision_scripts %}
+RUN ./software/{{ps}}
+{% endfor %}
+
+
+CMD ["uname", "-a"]

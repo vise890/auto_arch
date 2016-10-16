@@ -38,11 +38,7 @@ The choice is yours.
 
 ### 4 - Provision
 
-1. edit `./4_provision.sh`: add/remove steps you want;
-   - **NOTE** `./provisioning/ssh-for-default-user.sh` needs you to put your
-     public GPG key to `./authorized_keys` (or at least to remove mine from
-     it...);
-2. run it: `./4_provision.sh`.
+2. `./provision/provision.sh`.
 
 
 ## Appendix A

@@ -21,8 +21,7 @@ sudo pacman-key --lsign-key 962DDE58
 
 echo "==> installing infinality-bundle"
 sudo pacman -Syy --noconfirm
-# FIXME: does not automatically replace freetype2, fontconfig and cairo if they are installed
-sudo pacman -S --force --noconfirm infinality-bundle
+sudo pacman -S --force --noconfirm --force infinality-bundle
 
 echo "==> installing some useful fonts"
 sudo pacman -S --noconfirm --needed \

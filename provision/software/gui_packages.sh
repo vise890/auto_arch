@@ -14,5 +14,5 @@ sudo pacman -S --noconfirm --needed \
   redshift \
   lxappearance \
   xchat \
-  meld
+  meld gitg
 

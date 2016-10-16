@@ -1,0 +1,12 @@
+#!/bin/env python3
+
+import os
+from jinja2 import Template
+
+provision_scripts = sorted(os.listdir('./software'))
+
+with open('Dockerfile.template') as tf:
+    template = Template(tf.read())
+    dockerfile = template.render(provision_scripts=provision_scripts)
+    with open('Dockerfile', 'w') as df:
+        df.write(dockerfile)

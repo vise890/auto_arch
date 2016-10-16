@@ -11,8 +11,5 @@ sudo pacman -S --noconfirm --needed \
   networkmanager \
   polari gnome-maps \
   gnome-calendar gnome-clocks \
-  gnome-music gnome-videos \
+  gnome-music totem \
   gnome-boxes gnome-software
-
-echo "==> Enabling NetworkManager service"
-systemctl enable NetworkManager

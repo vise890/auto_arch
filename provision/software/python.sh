@@ -15,8 +15,8 @@ sudo pacman -S --noconfirm --needed \
     jupyter jupyter-notebook python-ipykernel \
     \
     python-numpy python-scipy \
-    python-pandas python-sympy
+    python-pandas python-sympy \
     python-matplotlib \
-    python-nose
+    python-nose \
     \
     python-requests python-jinja python-peewee python-flask
