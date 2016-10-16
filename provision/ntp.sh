@@ -4,6 +4,3 @@ IFS=$'\n\t'
 
 echo "==> Sync time with NTP"
 timedatectl set-ntp true
-
-
-
