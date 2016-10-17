@@ -21,7 +21,7 @@ sudo pacman-key --lsign-key 962DDE58
 
 echo "==> installing infinality-bundle"
 sudo pacman -Syy --noconfirm
-sudo pacman -R --nodeps --nodeps cairo freetype2 fontconfig || true
+sudo pacman -R --nodeps --nodeps --noconfirm cairo freetype2 fontconfig || true
 sudo pacman -S --force --noconfirm infinality-bundle
 
 echo "==> installing some useful fonts"
