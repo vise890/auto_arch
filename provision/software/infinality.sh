@@ -21,7 +21,8 @@ sudo pacman-key --lsign-key 962DDE58
 
 echo "==> installing infinality-bundle"
 sudo pacman -Syy --noconfirm
-sudo pacman -S --force --noconfirm --force infinality-bundle
+sudo pacman -R --nodeps --nodeps cairo freetype2 fontconfig || true
+sudo pacman -S --force --noconfirm infinality-bundle
 
 echo "==> installing some useful fonts"
 sudo pacman -S --noconfirm --needed \
@@ -31,6 +32,6 @@ sudo pacman -S --noconfirm --needed \
     otf-bitter-ibx \
     ttf-merriweather-ib ttf-merriweather-sans-ib \
     ttf-roboto-ibx \
+    ttf-noto-fonts-cjk-ib ttf-noto-fonts-ib ttf-noto-fonts-nonlatin-ib \
     otf-alegreya-ibx otf-alegreya-sans-ibx \
-    ttf-fira-mono-ibx ttf-fira-sans-ibx \
-    ttf-noto-emoji-ib
+    ttf-fira-mono-ibx ttf-fira-sans-ibx
