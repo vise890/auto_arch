@@ -5,7 +5,9 @@ ADD . /tmp/auto_arch
 
 WORKDIR /tmp/auto_arch
 
-RUN ./bootstrap.sh
+RUN ./bootstrap/sudo.sh
+RUN ./bootstrap/optimize_pacman_mirrorlist.sh
+RUN ./bootstrap/upgrade_system.sh
 
 
 {% for ps in provision_scripts %}
