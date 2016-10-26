@@ -1,12 +1,53 @@
 #!/bin/env python3
+"""
+Generates a Dockerfile that RUNs all the scripts and installs
+all the packages
+"""
 
 import os
 from jinja2 import Template
 
-provision_scripts = sorted(os.listdir('./software'))
+software = sorted(os.listdir('./software'))
 
-with open('Dockerfile.template') as tf:
-    template = Template(tf.read())
-    dockerfile = template.render(provision_scripts=provision_scripts)
-    with open('Dockerfile', 'w') as df:
-        df.write(dockerfile)
+def extension(filename: str) -> str:
+    """returns the extension from a filename"""
+    return os.path.splitext(filename)[1]
+
+
+provision_scripts = {l for l in software if extension(l) == '.sh'}
+packages_files = {l for l in software if extension(l) == '.pkgs'}
+
+assert provision_scripts.union(packages_files) - set(software) == set()
+
+
+DOCKERFILE_TEMPLATE = """
+FROM pritunl/archlinux:latest
+
+ADD . /tmp/auto_arch
+
+WORKDIR /tmp/auto_arch
+
+RUN ./bootstrap/sudo.sh
+RUN ./bootstrap/optimize_pacman_mirrorlist.sh
+RUN ./bootstrap/upgrade_system.sh
+
+
+# Packages
+{% for pf in packages_files %}
+RUN pacman -S --noconfirm --needed < {{pf}}
+{% endfor %}
+
+# Scripts
+{% for ps in provision_scripts %}
+RUN ./software/{{ps}}
+{% endfor %}
+
+
+CMD ["uname", "-a"]
+"""
+
+template = Template(DOCKERFILE_TEMPLATE)
+dockerfile = template.render(provision_scripts=provision_scripts,
+                             packages_files=packages_files)
+with open('Dockerfile', 'w') as df:
+    df.write(dockerfile)
