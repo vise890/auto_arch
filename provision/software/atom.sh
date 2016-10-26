@@ -4,5 +4,6 @@ IFS=$'\n\t'
 
 echo "==> Installing atom"
 sudo pacman -S --noconfirm --needed \
-  atom apm
+  atom apm \
+  trash-cli
 
