@@ -1,0 +1,4 @@
+isync
+msmtp msmtp-mta
+notmuch notmuch-mutt
+mutt

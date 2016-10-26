@@ -1,0 +1,23 @@
+zsh zsh-syntax-highlighting
+
+autojump tree ranger
+
+the_silver_searcher ripgrep
+
+vim vim-spell-en neovim python-neovim python2-neovim
+
+git tig
+pygmentize cloc
+htop glances
+stow
+httpie jq
+aria2 wget lynx
+
+rsync unison
+
+pass openssh
+
+bpython
+shellcheck
+asciinema
+alsa-utils

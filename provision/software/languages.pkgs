@@ -1,0 +1,25 @@
+ghc stack
+ocaml
+
+clojure
+racket-minimal racket-docs
+guile
+
+elixir
+
+python bpython
+ruby
+
+nodejs npm
+
+go
+rust cargo
+
+lua
+
+scala sbt
+
+julia julia-docs
+
+crystal shards
+nim nimble
