@@ -1,12 +1,18 @@
-baobab gparted
-transmission-gtk notification-daemon
+notification-daemon
+
 midori chromium firefox
 gimp
-keepassx2
-libreoffice-fresh
 vlc mplayer mpv pavucontrol
-redshift
-lxappearance qt5ct
+transmission-gtk
+
+keepassx2
+
+libreoffice-fresh
+
 xchat
 meld gitg
+baobab gparted
 
+redshift
+lxappearance qt5ct
+xorg-xdpyinfo
