@@ -5,8 +5,6 @@ clojure
 racket-minimal racket-docs
 guile
 
-elixir
-
 python bpython
 ruby
 
@@ -20,6 +18,3 @@ lua
 scala sbt
 
 julia julia-docs
-
-crystal shards
-nim nimble
