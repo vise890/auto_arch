@@ -1,7 +1,1 @@
-
-make test | ag reinstall
-
-
-
-
-test chroot + low level isntall with packer (bring back renegade_arch)
+test chroot + low level install with packer (bring back renegade arch)
