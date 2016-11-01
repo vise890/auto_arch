@@ -34,7 +34,7 @@ RUN ./bootstrap/upgrade_system.sh
 
 # Packages
 {% for pf in packages_files %}
-RUN pacman -S --noconfirm --needed < {{pf}}
+RUN pacman -S --noconfirm --needed < ./software/{{pf}}
 {% endfor %}
 
 # Scripts
