@@ -1,0 +1,7 @@
+(A) mount host:~/renegade_home guest:/home/renegade
+(B) forward ports: everything i can
+(B) move post-install/virtualbox-guest-utils.sh to auto_arch
+(C) add infra tests
+(C) FIX: key management is still pretty dodgy
+cache pacman mirrors (for ridiculous debugging/building speed)
+ensure that vagrant detects the guest as arch (and arch only)

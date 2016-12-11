@@ -1,0 +1,13 @@
+*.log
+
+authorized_keys
+
+*.box
+.vagrant*
+packer_cache/
+output-virtualbox-iso/
+
+auto_arch
+auto_arch.tar.gz
+
+.polipo-cache
