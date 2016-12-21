@@ -1,16 +1,19 @@
 notification-daemon
 
 midori chromium firefox
-gimp
-vlc mplayer mpv pavucontrol
+xchat
 transmission-gtk
 
 keepassx2
-
 libreoffice-fresh
+calibre
 
-xchat
+gimp
+vlc mplayer mpv pavucontrol
+
+
 meld gitg
+
 baobab gparted
 
 redshift
