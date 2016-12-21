@@ -21,3 +21,5 @@ bpython
 shellcheck
 asciinema
 alsa-utils
+
+zip unzip unrar
