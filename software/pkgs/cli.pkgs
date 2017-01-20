@@ -2,22 +2,34 @@ zsh zsh-syntax-highlighting
 
 autojump tree ranger
 
+parallel
+
 the_silver_searcher ripgrep
+multitail
 
 vim vim-spell-en neovim python-neovim python2-neovim
+tmux
 
 git tig
 pygmentize cloc
-htop glances
 stow
+htop glances
+
 httpie jq
-aria2 wget lynx
+curl aria2 wget rtorrent lynx
+siege
+whois bind-tools
+mtr
+socat
+iftop nethogs
+ipcalc
 
 rsync unison
 
 pass openssh
 
-bpython
+bpython libqalculate
+
 shellcheck
 asciinema
 alsa-utils
