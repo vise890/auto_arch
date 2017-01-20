@@ -14,7 +14,7 @@ ruby
 
 nodejs npm
 
-go
+go godep
 rust cargo
 
 lua
