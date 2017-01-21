@@ -1,5 +1,5 @@
 i3
-rxvt-unicode
+rxvt-unicode rxvt-unicode-terminfo
 feh
 xautolock
 dmenu rofi
