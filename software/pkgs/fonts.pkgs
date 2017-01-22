@@ -1,14 +1,23 @@
 fontconfig freetype2 cairo
 
-ttf-ubuntu-font-family
 adobe-source-code-pro-fonts
-
-ttf-roboto
-
 noto-fonts
-noto-fonts-emoji
 noto-fonts-cjk
+noto-fonts-emoji
 nototools
-
+profont
+terminus-font
+ttf-bitstream-vera
+ttf-croscore
+ttf-dejavu
+ttf-droid
 ttf-fira-mono ttf-fira-sans
-
+ttf-freefont
+ttf-gentium
+ttf-hack
+ttf-inconsolata
+ttf-liberation
+ttf-linux-libertine
+ttf-roboto
+ttf-ubraille
+ttf-ubuntu-font-family
