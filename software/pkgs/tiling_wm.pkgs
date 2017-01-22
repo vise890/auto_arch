@@ -1,7 +1,14 @@
 i3
+sway
+
 rxvt-unicode rxvt-unicode-terminfo
+
 feh
 xautolock
+
 dmenu rofi
+
 uzbl-browser
 zathura
+
+scrot

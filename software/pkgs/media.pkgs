@@ -1,3 +1,11 @@
+vlc mplayer mpv
+
+gimp pinta
+shotwell
+
+pavucontrol
+paprefs
+
 gstreamer
 gst-libav
 gst-plugins-base gst-plugins-good

@@ -1,3 +1,5 @@
+emacs
+
 notification-daemon
 
 midori chromium firefox
@@ -8,14 +10,10 @@ keepassx2
 libreoffice-fresh
 calibre
 
-gimp
-vlc mplayer mpv pavucontrol
-
-
 meld gitg
 
 baobab gparted
 
 redshift
 lxappearance qt5ct
-xorg-xdpyinfo
+xorg-xdpyinfo xorg-xinput
