@@ -1,1 +1,3 @@
 test chroot + low level install with packer (bring back renegade arch)
+add sway
+add runc, containerd, rkt
