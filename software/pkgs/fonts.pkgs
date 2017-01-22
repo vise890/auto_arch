@@ -1,0 +1,14 @@
+fontconfig freetype2 cairo
+
+ttf-ubuntu-font-family
+adobe-source-code-pro-fonts
+
+ttf-roboto
+
+noto-fonts
+noto-fonts-emoji
+noto-fonts-cjk
+nototools
+
+ttf-fira-mono ttf-fira-sans
+
