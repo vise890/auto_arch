@@ -11,6 +11,8 @@ multitail
 vim vim-spell-en neovim python-neovim python2-neovim
 tmux
 
+pandoc
+
 git tig
 pygmentize cloc
 stow
