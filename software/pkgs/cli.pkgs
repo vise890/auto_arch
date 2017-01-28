@@ -37,4 +37,4 @@ shellcheck
 asciinema
 alsa-utils
 
-zip unzip unrar
+zip unzip unrar p7zip unace lrzip

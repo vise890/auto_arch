@@ -19,4 +19,4 @@ lxappearance qt5ct
 xorg-xdpyinfo xorg-xinput
 gucharmap
 
-xarchiver
+file-roller xarchiver
