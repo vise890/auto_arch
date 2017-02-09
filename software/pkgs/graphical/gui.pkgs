@@ -2,7 +2,7 @@ emacs
 
 notification-daemon
 
-midori chromium firefox
+firefox midori chromium
 hexchat
 transmission-gtk
 

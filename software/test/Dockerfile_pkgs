@@ -1,0 +1,8 @@
+FROM archlinux:latest
+
+RUN cat pkgs/*.pkgs | pacman -S --noconfirm --needed -
+RUN cat pkgs/graphical/*.pkgs | pacman -S --noconfirm --needed -
+RUN cat pkgs/langs/*.pkgs | pacman -S --noconfirm --needed -
+RUN cat pkgs/optional/*.pkgs | pacman -S --noconfirm --needed -
+
+CMD ["uname", "-a"]

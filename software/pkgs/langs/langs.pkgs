@@ -1,11 +1,8 @@
 ghc stack
-ocaml
 
 clojure
 racket-minimal racket-docs
-guile chicken
 
-erlang rebar yaws
 elixir
 
 python bpython
@@ -13,9 +10,6 @@ ruby
 
 nodejs npm
 
-go godep
-rust cargo
+go go-tools godep
 
 lua
-
-scala sbt

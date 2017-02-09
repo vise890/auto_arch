@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 echo "==> installing sudo"
-pacman -S --noconfirm sudo
+pacman -S --noconfirm --needed sudo
 
 echo "==> allow all members of wheel to be sudoers"
 sed -i 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/' /etc/sudoers

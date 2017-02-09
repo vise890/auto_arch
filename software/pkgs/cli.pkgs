@@ -23,9 +23,6 @@ curl aria2 wget rtorrent lynx
 siege
 whois bind-tools
 mtr
-socat
-iftop nethogs
-ipcalc
 
 rsync unison
 

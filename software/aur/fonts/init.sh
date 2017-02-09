@@ -7,6 +7,10 @@ sudo -v
 # shamelessly stolen from
 # https://gist.github.com/cryzed/e002e7057435f02cc7894b9e748c5671
 
+echo "==> installing base font stuff"
+pkgs="$(dirname "$0")/fonts.pkgs"
+sudo pacman -S --noconfirm --needed "$(cat "$pkgs")"
+
 echo "==> symlinking profiles"
 sudo ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d || true
 sudo ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d || true

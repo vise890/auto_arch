@@ -1,0 +1,10 @@
+thunar
+gvfs thunar-volman
+
+thunar-archive-plugin
+
+tumbler
+ffmpegthumbnailer
+poppler-glib
+libgsf
+libopenraw

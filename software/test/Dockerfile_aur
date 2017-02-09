@@ -1,0 +1,8 @@
+FROM archlinux:latest
+
+RUN ./aur/init.sh
+RUN packer --noconfirm --noedit $(cat aur/*.pkgs)
+
+RUN ./aur/fonts/init.sh
+
+CMD ["uname", "-a"]
