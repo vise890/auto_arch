@@ -19,7 +19,8 @@ stow
 htop glances
 
 httpie jq
-curl aria2 wget rtorrent lynx
+curl aria2 wget rtorrent lftp
+lynx
 siege
 whois bind-tools
 mtr
