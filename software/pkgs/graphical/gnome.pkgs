@@ -12,9 +12,25 @@ gedit gedit-code-assistance gedit-plugins
 
 networkmanager
 
+tracker gnome-online-miners gnome-activity-journal gnome-search-tool
+
+totem gnome-music gnome-mplayer gnome-subtitles
+
 gnome-calendar gnome-clocks
 
-gnome-music totem
+gnome-2048
+gnome-alsamixer
+gnome-boxes
+gnome-break-timer
+gnome-characters
+gnome-mime-data
+gnome-nettool
+gnome-phone-manager
+gnome-photos
+gnome-power-manager
+gnome-software
+gnome-sound-recorder
+gnome-todo
 gnome-weather
+seahorse
 
-tracker
