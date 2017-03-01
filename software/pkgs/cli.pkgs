@@ -5,7 +5,7 @@ sudo
 
 autojump tree ranger
 
-parallel
+pv parallel
 
 the_silver_searcher ripgrep
 multitail
