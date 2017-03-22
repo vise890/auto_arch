@@ -18,19 +18,30 @@ totem gnome-music gnome-mplayer gnome-subtitles
 
 gnome-calendar gnome-clocks
 
+
 gnome-2048
-gnome-alsamixer
 gnome-boxes
 gnome-break-timer
+gnome-builder
+gnome-calculator
 gnome-characters
+gnome-contacts
+gnome-dictionary
+gnome-disk-utility
+gnome-font-viewer
+gnome-maps
 gnome-mime-data
 gnome-nettool
-gnome-phone-manager
 gnome-photos
 gnome-power-manager
+gnome-screenshot
+gnome-shell-extensions
 gnome-software
 gnome-sound-recorder
+gnome-system-log
+gnome-system-monitor
+gnome-terminal
 gnome-todo
+gnome-user-docs
 gnome-weather
 seahorse
-
