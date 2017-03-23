@@ -5,6 +5,7 @@ nautilus sushi
 
 gnome-tweak-tool
 dconf-editor
+xdg-user-dirs-gtk
 
 gnome-logs
 
@@ -44,4 +45,5 @@ gnome-terminal
 gnome-todo
 gnome-user-docs
 gnome-weather
+polari
 seahorse
