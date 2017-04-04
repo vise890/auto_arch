@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-echo "==> Installing gnome packages"
+echo "==> Installing networkmanager packages"
 sudo pacman -S --noconfirm --needed \
   networkmanager \
   network-manager-applet \
