@@ -11,3 +11,5 @@ dos2unix
 
 reflector
 expac
+
+inotify-tools
