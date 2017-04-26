@@ -4,6 +4,7 @@ clojure
 racket-minimal racket-docs
 
 elixir
+erlang rebar
 
 python bpython
 ruby
