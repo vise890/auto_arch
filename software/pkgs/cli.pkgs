@@ -27,10 +27,12 @@ lynx
 siege
 whois bind-tools
 mtr
+ipcalc
 
 rsync unison
 
-pass openssh
+openssh
+pass
 
 bpython libqalculate
 

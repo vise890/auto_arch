@@ -22,7 +22,6 @@ gnome-calendar gnome-clocks
 
 gnome-2048
 gnome-boxes
-gnome-break-timer
 gnome-builder
 gnome-calculator
 gnome-characters
@@ -42,7 +41,6 @@ gnome-sound-recorder
 gnome-system-log
 gnome-system-monitor
 gnome-terminal
-gnome-todo
 gnome-user-docs
 gnome-user-share
 gnome-weather

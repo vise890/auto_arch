@@ -1,6 +1,5 @@
 ghc stack
 scala sbt
-fsharp
 
 clojure
 racket-minimal racket-docs
@@ -16,9 +15,6 @@ nodejs npm
 typescript
 
 go go-tools godep
-
-nim nimble
-crystal shards
 
 lua
 io
