@@ -1,0 +1,7 @@
+bluez
+bluez-utils
+bluez-libs
+bluez-firmware
+
+pulseaudio-alsa
+pulseaudio-bluetooth
