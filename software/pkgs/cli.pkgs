@@ -22,6 +22,7 @@ htop glances
 
 httpie jq
 curl aria2 wget rtorrent lftp
+go-ipfs
 lynx
 siege
 whois bind-tools
