@@ -2,7 +2,7 @@ ntfs-3g
 
 rng-tools
 
-bluez-firmware
+rfkill
 iw
 
 jshon
