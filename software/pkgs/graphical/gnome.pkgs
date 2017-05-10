@@ -15,7 +15,7 @@ networkmanager
 
 tracker gnome-online-miners gnome-activity-journal gnome-search-tool
 
-totem gnome-music gnome-mplayer gnome-subtitles
+totem gnome-mplayer gnome-subtitles
 
 gnome-calendar gnome-clocks
 
@@ -23,6 +23,7 @@ epiphany
 
 
 gnome-2048
+gnome-backgrounds
 gnome-boxes
 gnome-builder
 gnome-calculator
@@ -38,7 +39,6 @@ gnome-photos
 gnome-power-manager
 gnome-screenshot
 gnome-shell-extensions
-gnome-software
 gnome-sound-recorder
 gnome-system-log
 gnome-system-monitor

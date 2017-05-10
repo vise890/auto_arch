@@ -33,6 +33,7 @@ rsync unison
 
 openssh
 pass
+pwgen
 
 bpython libqalculate
 
