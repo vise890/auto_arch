@@ -3,4 +3,6 @@ xf86-video-intel
 
 bbswitch
 bumblebee
-acpi_call
+acpi_call acpi
+
+mesa-demos
