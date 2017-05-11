@@ -1,3 +1,0 @@
-
-make show pkgs
-{pacman_my_explicits} - {auto_arch_pkgs}
