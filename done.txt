@@ -13,3 +13,8 @@ x test provisioning with Docker RUN + every script (maybe some cheeky erb/python
 
 
 x move all pkgs to .pkgs files
+
+x test chroot + low level install with packer (bring back renegade arch)
+
+
+x add runc, containerd, rkt
