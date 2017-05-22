@@ -33,13 +33,13 @@ whois bind-tools
 mtr
 ipcalc
 
-rsync unison
+rsync
 
 openssh
 pass
 pwgen
 
-bpython libqalculate
+bpython
 
 shellcheck
 asciinema
