@@ -11,6 +11,7 @@ the_silver_searcher ripgrep
 multitail
 
 vim vim-spell-en neovim python-neovim python2-neovim
+ed
 tmux
 
 pandoc
