@@ -3,7 +3,10 @@ archey3
 zsh zsh-syntax-highlighting
 sudo
 
+moreutils
+
 autojump tree ranger
+rmlint
 
 pv parallel
 
