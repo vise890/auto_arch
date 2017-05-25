@@ -6,7 +6,7 @@ echo "==> Installing networkmanager packages"
 sudo pacman -S --noconfirm --needed \
   networkmanager \
   network-manager-applet \
-  networkmanager-openvpn
+  networkmanager-openvpn networkmanager-pptp
 
 
 echo "==> Enabling NetworkManager service"
