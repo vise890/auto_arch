@@ -3,7 +3,6 @@ scala sbt
 
 clojure
 racket-minimal racket-docs
-chicken
 
 elixir
 erlang rebar
