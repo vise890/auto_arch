@@ -6,7 +6,7 @@ python-isort python-pylint python-pycodestyle autopep8
 python-jedi
 
 bpython ipython
-jupyter jupyter-notebook python-ipykernel
+jupyter jupyter-notebook python-ipykernel thebe
 
 python-numpy python-scipy
 python-pandas python-sympy
