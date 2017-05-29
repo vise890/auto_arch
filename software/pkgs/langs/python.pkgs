@@ -13,6 +13,7 @@ python-numpy python-scipy
 python-pandas python-sympy
 python-matplotlib python-seaborn
 python-nose
+python-xlrd python-openpyxl
 
 python-tensorflow tensorflow
 
