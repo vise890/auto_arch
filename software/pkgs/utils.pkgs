@@ -13,3 +13,5 @@ reflector
 expac
 
 inotify-tools
+
+xclip rlwrap

@@ -1,5 +1,9 @@
-i3
+i3 i3blocks i3lock i3status i3-wm
 sway
+compton
+
+lightdm
+lightdm-gtk-greeter
 
 rxvt-unicode rxvt-unicode-terminfo
 
@@ -9,6 +13,6 @@ xautolock
 dmenu rofi
 
 uzbl-browser
-zathura
+zathura zathura-pdf-mupdf
 
 scrot

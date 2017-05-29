@@ -1,5 +1,5 @@
 networkmanager
-networkmanager-openvpn
+networkmanager-openvpn networkmanager-pptp
 
 network-manager-applet
 

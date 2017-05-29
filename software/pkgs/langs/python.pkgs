@@ -19,3 +19,4 @@ python-requests
 python-jinja
 python-peewee
 python-flask
+python-pygments

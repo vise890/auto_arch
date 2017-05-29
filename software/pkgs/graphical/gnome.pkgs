@@ -20,7 +20,8 @@ totem gnome-mplayer gnome-subtitles
 gnome-calendar gnome-clocks
 
 epiphany
-
+eog
+evince
 
 gnome-2048
 gnome-backgrounds
@@ -32,6 +33,7 @@ gnome-contacts
 gnome-dictionary
 gnome-disk-utility
 gnome-font-viewer
+gnome-keyring libgnome-keyring
 gnome-maps
 gnome-mime-data
 gnome-nettool
