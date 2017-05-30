@@ -1,31 +1,36 @@
 fontconfig freetype2 cairo
 
 adobe-source-code-pro-fonts
+adobe-source-han-sans-otc-fonts
+font-bh-ttf
+font-mathematica
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+powerline-fonts
 profont
 terminus-font
-ttf-ionicons
 ttf-anonymous-pro
+ttf-arphic-uming
 ttf-bitstream-vera
+ttf-cheapskate
 ttf-croscore
 ttf-dejavu
 ttf-droid
-ttf-fira-mono ttf-fira-sans
+ttf-fira-mono
+ttf-fira-sans
 ttf-freefont
 ttf-gentium
 ttf-hack
 ttf-inconsolata
+ttf-indic-otf
+ttf-ionicons
+ttf-junicode
 ttf-liberation
 ttf-linux-libertine
+ttf-mph-2b-damase
 ttf-roboto
+ttf-symbola
 ttf-ubraille
 ttf-ubuntu-font-family
-
-
-noto-fonts-emoji
-ttf-freefont
-ttf-arphic-uming
-ttf-indic-otf
-ttf-symbola
+xorg-fonts-type1
