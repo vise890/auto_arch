@@ -6,6 +6,7 @@ lightdm
 lightdm-gtk-greeter
 
 rxvt-unicode rxvt-unicode-terminfo
+termite termite-terminfo
 
 feh
 xautolock
