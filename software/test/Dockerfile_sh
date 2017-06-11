@@ -1,9 +1,0 @@
-FROM archlinux:latest
-
-RUN ./sh/sudo.sh
-RUN ./sh/optimize_pacman_mirrorlist.sh
-RUN ./sh/upgrade_system.sh
-
-RUN ./sh/create_user.sh test test
-
-CMD ["uname", "-a"]

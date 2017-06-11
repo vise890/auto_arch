@@ -19,10 +19,6 @@ test_pkgs:
 	@echo "==> testing pkgs"
 	docker build . -f ./test/Dockerfile_pkgs
 
-test_sh:
-	@echo "==> testing sh"
-	docker build . -f ./test/Dockerfile_sh
-
 test_systemd:
 	@echo "==> testing systemd"
 	docker build . -f ./test/Dockerfile_systemd
