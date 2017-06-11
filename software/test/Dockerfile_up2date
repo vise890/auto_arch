@@ -1,8 +1,8 @@
-FROM pritunl/archlinux:latest
+FROM nfnty/arch-mini:latest
 
-ADD . /tmp/auto_arch
+ADD . ~/auto_arch
 
-WORKDIR /tmp/auto_arch
+WORKDIR ~/auto_arch
 
 RUN ./sh/sudo.sh
 RUN ./sh/optimize_pacman_mirrorlist.sh
