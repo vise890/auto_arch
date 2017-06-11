@@ -11,5 +11,18 @@ dos2unix
 
 reflector
 expac
+pacmatic
 
 inotify-tools
+
+powertop
+iftop
+
+hwinfo lshw
+
+rmlint fdupes
+ncdu
+
+vim-systemd
+
+catdoc
