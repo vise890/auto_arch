@@ -4,6 +4,7 @@ intero
 apply-refact
 hlint
 stylish-haskell
+hindent
 hasktags
 hoogle
 

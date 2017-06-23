@@ -2,7 +2,7 @@ ghc
 
 cabal-install stack
 
-hlint stylish-haskell
+hlint stylish-haskell hindent
 hasktags ghc-mod
 
 haskell-hspec
