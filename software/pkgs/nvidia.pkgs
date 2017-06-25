@@ -1,6 +1,10 @@
 nvidia
 xf86-video-intel
 
+xorg-xrandr
+
+primus
+
 bbswitch
 bumblebee
 acpi_call acpi
