@@ -2,6 +2,7 @@ ansible
 
 virtualbox
 vagrant
+terraform
 
 redis
 
