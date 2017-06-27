@@ -4,8 +4,10 @@ intero
 apply-refact
 hlint
 stylish-haskell
+hindent
 hasktags
 hoogle
+HaRe
 
 hspec
 hspec-core

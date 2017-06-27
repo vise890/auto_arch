@@ -2,12 +2,12 @@ gnome
 gdm
 
 nautilus sushi
+nautilus-open-terminal
 
 gnome-tweak-tool
 dconf-editor
 xdg-user-dirs-gtk
 
-gnome-logs
 
 gedit gedit-code-assistance gedit-plugins
 
@@ -15,9 +15,6 @@ networkmanager
 
 tracker gnome-online-miners gnome-search-tool
 
-totem gnome-mplayer gnome-subtitles
-
-gnome-calendar gnome-clocks
 
 epiphany
 eog
@@ -28,7 +25,9 @@ gnome-backgrounds
 gnome-boxes
 gnome-builder
 gnome-calculator
+gnome-calendar
 gnome-characters
+gnome-clocks
 gnome-contacts
 gnome-dictionary
 gnome-disk-utility
@@ -36,6 +35,7 @@ gnome-font-viewer
 gnome-keyring libgnome-keyring
 gnome-maps
 gnome-mime-data
+gnome-mplayer
 gnome-nettool
 gnome-photos
 gnome-power-manager
@@ -50,3 +50,4 @@ gnome-user-share
 gnome-weather
 polari
 seahorse
+totem

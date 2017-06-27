@@ -1,0 +1,6 @@
+FROM nfnty/arch-mini:latest
+
+RUN cat gui_pkgs/*.pkgs | pacman -S --noconfirm --needed -
+
+CMD ["uname", "-a"]
+
