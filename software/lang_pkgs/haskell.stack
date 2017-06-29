@@ -1,13 +1,16 @@
 ghc-mod
+hlint
+
 intero
 
+HaRe
+haskell-tools-daemon
+
 apply-refact
-hlint
 stylish-haskell
 hindent
 hasktags
 hoogle
-HaRe
 
 hspec
 hspec-core
