@@ -2,14 +2,38 @@ ghc
 
 cabal-install stack
 
-hlint stylish-haskell hindent
-hasktags ghc-mod
+ghc-mod
+hasktags
+hindent
+hlint
+stylish-haskell
 
-haskell-hspec
-haskell-hspec-core haskell-hspec-discover haskell-hspec-expectations
-
-haskell-text
-
-haskell-attoparsec
 haskell-aeson
+haskell-aeson-better-errors
+haskell-aeson-pretty
+haskell-attoparsec
+haskell-cassava
+haskell-cereal
+haskell-cheapskate
+haskell-cmark
+haskell-conduit
+haskell-conduit-combinators
+haskell-conduit-extra
+haskell-criterion
+haskell-file-embed
+haskell-foundation
+haskell-hspec
+haskell-hspec-core
+haskell-hspec-discover
+haskell-hspec-expectations
 haskell-optparse-applicative
+haskell-servant
+haskell-servant-server
+haskell-servant-swagger
+haskell-string-conversions
+haskell-tasty
+haskell-tasty-hunit
+haskell-tasty-quickcheck
+haskell-tasty-rerun
+haskell-text
+haskell-vector
