@@ -6,6 +6,7 @@ ghc-mod
 hasktags
 hindent
 hlint
+hoogle
 stylish-haskell
 
 haskell-aeson
@@ -27,6 +28,7 @@ haskell-hspec-core
 haskell-hspec-discover
 haskell-hspec-expectations
 haskell-optparse-applicative
+haskell-refact
 haskell-servant
 haskell-servant-server
 haskell-servant-swagger

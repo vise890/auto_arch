@@ -1,23 +1,4 @@
-ghc-mod
-hlint
-
 intero
 
 HaRe
 haskell-tools-daemon
-
-apply-refact
-stylish-haskell
-hindent
-hasktags
-hoogle
-
-hspec
-hspec-core
-hspec-discover
-hspec-expectations
-
-text
-attoparsec
-aeson
-optparse-applicative
