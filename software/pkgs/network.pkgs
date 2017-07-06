@@ -1,2 +1,6 @@
 networkmanager
-networkmanager-openvpn networkmanager-pptp
+
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
