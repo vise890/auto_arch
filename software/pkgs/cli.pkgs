@@ -4,6 +4,7 @@ zsh zsh-completions zsh-syntax-highlighting
 sudo
 
 moreutils
+exa
 
 autojump tree ranger
 
