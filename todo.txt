@@ -1,3 +1,0 @@
-use docker builder for packer
-feed packer output to make test docker
-add sway

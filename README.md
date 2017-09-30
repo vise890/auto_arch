@@ -1,4 +1,1 @@
-# Auto Arch
-
-A reasonably automated installation of Arch Linux.
-
+moved to [gitlab.com/vise890/auto_arch](https://gitlab.com/vise890/auto_arch)

@@ -1,4 +1,0 @@
-socat
-iftop nethogs
-ipcalc
-
