@@ -1,13 +1,12 @@
 emacs
 
-zeal
-
 notification-daemon
 
 firefox midori chromium
 hexchat
 transmission-gtk
-uget filezilla
+
+gufw
 
 keepassx2
 libreoffice-fresh

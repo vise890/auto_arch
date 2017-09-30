@@ -14,7 +14,8 @@ gedit gedit-code-assistance gedit-plugins
 networkmanager
 
 tracker gnome-online-miners gnome-search-tool
-
+zeitgeist activity-log-manager gnome-activity-journal
+catfish
 
 epiphany
 eog
